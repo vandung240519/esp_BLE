@@ -1,0 +1,3014 @@
+ts Jul 29J��ѹesp32: SPI�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 27 2024 16:06:45[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1c024h (114724) map[0m
+[0;32mI (144) esp_image: segment 1: paddr=0002c04c vaddr=3ffbdb60 size=03fcch ( 16332) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=68104h (426244) map[0m
+[0;32mI (297) esp_image: segment 3: paddr=0009812c vaddr=3ffc1b2c size=009c8h (  2504) load[0m
+[0;32mI (298) esp_image: segment 4: paddr=00098afc vaddr=40080000 size=19e6ch (106092) load[0m
+[0;32mI (357) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (357) boot: Disabling RNG early entropy source...[0m
+[0;32mI (369) cpu_start: Multicore app[0m
+[0;32mI (377) cpu_start: Pro cpu start user code[0m
+[0;32mI (377) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (378) cpu_start: Application information:[0m
+[0;32mI (381) cpu_start: Project name:     bt_discovery[0m
+[0;32mI (386) cpu_start: App version:      1[0m
+[0;32mI (390) cpu_start: Compile time:     May 27 2024 16:06:25[0m
+[0;32mI (396) cpu_start: ELF file SHA256:  4b52e1684...[0m
+[0;32mI (402) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (407) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (412) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (417) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (422) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (429) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (435) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (441) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (447) heap_init: At 3FFC6408 len 00019BF8 (102 KiB): DRAM[0m
+[0;32mI (453) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (459) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (466) heap_init: At 40099E6C len 00006194 (24 KiB): IRAM[0m
+[0;32mI (474) spi_flash: detected chip: generic[0m
+[0;32mI (477) spi_flash: flash io: dio[0m
+[0;33mW (481) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (495) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (500) main_task: Started on CPU0[0m
+[0;32mI (510) main_task: Calling app_main()[0m
+[0;32mI (550) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (550) BTDM_INIT: Bluetooth MAC: 44:17:93:7c:43:b2[0m
+[0;32mI (550) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1200) uart: queue free spaces: 10[0m
+[0;32mI (1210) GAP: event: 10[0m
+[0;32mI (1210) main_task: Returned from app_main()[0m
+[0;32mI (1220) GAP: Discovery started.[0m
+[0;32mI (24130) GAP: Device found: cc:47:40:01:35:46[0m
+[0;32mI (24130) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (24130) GAP: --RSSI: -80[0m
+[0;32mI (31030) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (31030) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (31030) GAP: --RSSI: -52[0m
+[0;32mI (31030) GAP: Found a target device, address b0:46:92:e1:37:c0, name OPPO A54[0m
+[0;32mI (31040) GAP: Cancel device discovery ...[0m
+[0;32mI (31150) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (31150) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (31150) GAP: --RSSI: -59[0m
+[0;32mI (31150) GAP: Device found: ???[0m
+[0;32mI (31200) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (31200) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (31200) GAP: --RSSI: -55[0m
+[0;32mI (31200) GAP: Device found: ???[0m
+[0;32mI (31540) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (31540) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (31540) GAP: --RSSI: -57[0m
+[0;32mI (31540) GAP: Device found: ???[0m
+[0;32mI (32150) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (32150) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (32150) GAP: --RSSI: -56[0m
+[0;32mI (32150) GAP: Device found: ???[0m
+[0;32mI (32200) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (32200) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (32200) GAP: --RSSI: -60[0m
+[0;32mI (32200) GAP: Device found: ???[0m
+[0;32mI (33440) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (33440) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (33440) GAP: --RSSI: -61[0m
+[0;32mI (33440) GAP: Device found: ???[0m
+[0;32mI (33540) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (33540) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (33540) GAP: --RSSI: -63[0m
+[0;32mI (33540) GAP: Device found: ???[0m
+[0;32mI (33710) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (33710) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (33710) GAP: --RSSI: -56[0m
+[0;32mI (33720) GAP: Device found: ???[0m
+[0;32mI (33970) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (33970) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (33970) GAP: --RSSI: -62[0m
+[0;32mI (33980) GAP: Device found: ???[0m
+[0;32mI (35990) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (36000) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (36000) GAP: --RSSI: -60[0m
+[0;32mI (36000) GAP: Device found: ???[0m
+[0;32mI (36500) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (36500) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (36500) GAP: --RSSI: -59[0m
+[0;32mI (36500) GAP: Device found: ???[0m
+[0;32mI (36590) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (36590) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (36590) GAP: --RSSI: -59[0m
+[0;32mI (36590) GAP: Device found: ???[0m
+[0;32mI (37160) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (37160) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (37160) GAP: --RSSI: -63[0m
+[0;32mI (37160) GAP: Device found: ???[0m
+[0;32mI (37230) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (37230) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (37230) GAP: --RSSI: -59[0m
+[0;32mI (37230) GAP: Device found: ???[0m
+[0;32mI (37270) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (37270) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (37270) GAP: --RSSI: -58[0m
+[0;32mI (37270) GAP: Device found: ???[0m
+[0;32mI (37820) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (37820) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (37820) GAP: --RSSI: -61[0m
+[0;32mI (37820) GAP: Device found: ???[0m
+[0;32mI (38280) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (38280) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (38280) GAP: --RSSI: -58[0m
+[0;32mI (38280) GAP: Device found: ???[0m
+[0;32mI (38500) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (38500) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (38500) GAP: --RSSI: -59[0m
+[0;32mI (38500) GAP: Device found: ???[0m
+[0;32mI (39820) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (39820) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (39820) GAP: --RSSI: -59[0m
+[0;32mI (39820) GAP: Device found: ???[0m
+[0;32mI (39870) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (39870) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (39870) GAP: --RSSI: -59[0m
+[0;32mI (39880) GAP: Device found: ???[0m
+[0;32mI (40200) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (40200) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (40200) GAP: --RSSI: -60[0m
+[0;32mI (40210) GAP: Device found: ???[0m
+[0;32mI (41150) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (41160) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (41160) GAP: --RSSI: -59[0m
+[0;32mI (41160) GAP: Device found: ???[0m
+[0;32mI (41210) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (41210) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (41210) GAP: --RSSI: -58[0m
+[0;32mI (41210) GAP: Device found: ???[0m
+[0;32mI (41270) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (41270) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (41270) GAP: --RSSI: -58[0m
+[0;32mI (41270) GAP: Device found: ???[0m
+[0;32mI (41340) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (41340) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (41340) GAP: --RSSI: -58[0m
+[0;32mI (41340) GAP: Device found: ???[0m
+[0;32mI (41820) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (41820) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (41820) GAP: --RSSI: -60[0m
+[0;32mI (41820) GAP: Device found: ???[0m
+[0;32mI (42330) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (42330) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (42330) GAP: --RSSI: -59[0m
+[0;32mI (42330) GAP: Device found: ???[0m
+[0;32mI (42420) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (42420) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (42420) GAP: --RSSI: -59[0m
+[0;32mI (42420) GAP: Device found: ???[0m
+[0;32mI (42470) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (42470) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (42470) GAP: --RSSI: -58[0m
+[0;32mI (42470) GAP: Device found: ???[0m
+[0;32mI (42570) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (42570) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (42570) GAP: --RSSI: -57[0m
+[0;32mI (42570) GAP: Device found: ???[0m
+[0;32mI (42660) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (42660) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (42660) GAP: --RSSI: -59[0m
+[0;32mI (42660) GAP: Device found: ???[0m
+[0;32mI (43030) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (43030) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (43030) GAP: --RSSI: -59[0m
+[0;32mI (43030) GAP: Device found: ???[0m
+[0;32mI (43130) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (43130) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (43130) GAP: --RSSI: -57[0m
+[0;32mI (43140) GAP: Device found: ???[0m
+[0;32mI (43720) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (43720) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (43720) GAP: --RSSI: -60[0m
+[0;32mI (43730) GAP: Device found: ???[0m
+[0;32mI (44090) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (44100) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (44100) GAP: --RSSI: -58[0m
+[0;32mI (44100) GAP: Device found: ???[0m
+[0;32mI (44740) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (44740) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (44740) GAP: --RSSI: -60[0m
+[0;32mI (44740) GAP: Device found: ???[0m
+[0;32mI (44860) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (44860) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (44860) GAP: --RSSI: -59[0m
+[0;32mI (44860) GAP: Device found: ???[0m
+[0;32mI (44900) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (44900) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (44900) GAP: --RSSI: -59[0m
+[0;32mI (44900) GAP: Device found: ???[0m
+[0;32mI (46080) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (46080) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (46080) GAP: --RSSI: -57[0m
+[0;32mI (46080) GAP: Device found: ???[0m
+[0;32mI (46230) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (46230) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (46230) GAP: --RSSI: -59[0m
+[0;32mI (46230) GAP: Device found: ???[0m
+[0;32mI (46560) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (46560) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (46560) GAP: --RSSI: -58[0m
+[0;32mI (46560) GAP: Device found: ???[0m
+[0;32mI (46720) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (46720) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (46720) GAP: --RSSI: -59[0m
+[0;32mI (46720) GAP: Device found: ???[0m
+[0;32mI (47150) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (47150) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (47150) GAP: --RSSI: -59[0m
+[0;32mI (47150) GAP: Device found: ???[0m
+[0;32mI (47290) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (47290) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (47290) GAP: --RSSI: -60[0m
+[0;32mI (47290) GAP: Device found: ???[0m
+[0;32mI (47380) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (47380) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (47380) GAP: --RSSI: -61[0m
+[0;32mI (47380) GAP: Device found: ???[0m
+[0;32mI (47430) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (47430) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (47430) GAP: --RSSI: -59[0m
+[0;32mI (47430) GAP: Device found: ???[0m
+[0;32mI (47710) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (47710) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (47710) GAP: --RSSI: -56[0m
+[0;32mI (47720) GAP: Device found: ???[0m
+[0;32mI (47780) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (47780) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (47780) GAP: --RSSI: -61[0m
+[0;32mI (47790) GAP: Device found: ???[0m
+[0;32mI (48180) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (48180) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (48180) GAP: --RSSI: -55[0m
+[0;32mI (48190) GAP: Device found: ???[0m
+[0;32mI (48600) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (48610) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (48610) GAP: --RSSI: -57[0m
+[0;32mI (48610) GAP: Device found: ???[0m
+[0;32mI (48650) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (48650) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (48650) GAP: --RSSI: -60[0m
+[0;32mI (48650) GAP: Device found: ???[0m
+[0;32mI (48750) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (48750) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (48750) GAP: --RSSI: -55[0m
+[0;32mI (48750) GAP: Device found: ???[0m
+[0;32mI (48870) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (48870) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (48870) GAP: --RSSI: -56[0m
+[0;32mI (48870) GAP: Device found: ???[0m
+[0;32mI (49050) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (49050) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (49050) GAP: --RSSI: -58[0m
+[0;32mI (49050) GAP: Device found: ???[0m
+[0;32mI (49400) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (49400) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (49400) GAP: --RSSI: -59[0m
+[0;32mI (49400) GAP: Device found: ???[0m
+[0;32mI (49670) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (49670) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (49670) GAP: --RSSI: -59[0m
+[0;32mI (49670) GAP: Device found: ???[0m
+[0;32mI (49890) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (49890) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (49890) GAP: --RSSI: -59[0m
+[0;32mI (49890) GAP: Device found: ???[0m
+[0;32mI (49940) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (49940) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (49940) GAP: --RSSI: -59[0m
+[0;32mI (49940) GAP: Device found: ???[0m
+[0;32mI (50390) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (50390) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (50390) GAP: --RSSI: -59[0m
+[0;32mI (50390) GAP: Device found: ???[0m
+[0;32mI (51010) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (51010) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (51010) GAP: --RSSI: -59[0m
+[0;32mI (51020) GAP: Device found: ???[0m
+[0;32mI (51080) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (51080) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (51080) GAP: --RSSI: -56[0m
+[0;32mI (51090) GAP: Device found: ???[0m
+[0;32mI (51120) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (51130) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (51130) GAP: --RSSI: -59[0m
+[0;32mI (51130) GAP: Device found: ???[0m
+[0;32mI (51410) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (51410) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (51410) GAP: --RSSI: -56[0m
+[0;32mI (51410) GAP: Device found: ???[0m
+[0;32mI (51560) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (51560) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (51560) GAP: --RSSI: -57[0m
+[0;32mI (51560) GAP: Device found: ???[0m
+[0;32mI (51590) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (51590) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (51590) GAP: --RSSI: -58[0m
+[0;32mI (51590) GAP: Device found: ???[0m
+[0;32mI (52010) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (52010) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (52010) GAP: --RSSI: -58[0m
+[0;32mI (52010) GAP: Device found: ???[0m
+[0;32mI (52310) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (52310) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (52310) GAP: --RSSI: -56[0m
+[0;32mI (52310) GAP: Device found: ???[0m
+[0;32mI (52350) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (52350) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (52350) GAP: --RSSI: -61[0m
+[0;32mI (52350) GAP: Device found: ???[0m
+[0;32mI (52910) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (52910) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (52910) GAP: --RSSI: -59[0m
+[0;32mI (52910) GAP: Device found: ???[0m
+[0;32mI (53360) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (53360) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (53360) GAP: --RSSI: -59[0m
+[0;32mI (53360) GAP: Device found: ???[0m
+[0;32mI (53610) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (53610) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (53610) GAP: --RSSI: -59[0m
+[0;32mI (53610) GAP: Device found: ???[0m
+[0;32mI (53660) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (53660) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (53660) GAP: --RSSI: -57[0m
+[0;32mI (53660) GAP: Device found: ???[0m
+[0;32mI (53920) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (53920) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (53920) GAP: --RSSI: -60[0m
+[0;32mI (53920) GAP: Device found: ???[0m
+[0;32mI (54900) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (54900) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (54900) GAP: --RSSI: -57[0m
+[0;32mI (54900) GAP: Device found: ???[0m
+[0;32mI (56190) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (56200) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (56200) GAP: --RSSI: -58[0m
+[0;32mI (56200) GAP: Device found: ???[0m
+[0;32mI (56550) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (56550) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (56550) GAP: --RSSI: -59[0m
+[0;32mI (56550) GAP: Device found: ???[0m
+[0;32mI (57510) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (57510) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (57510) GAP: --RSSI: -58[0m
+[0;32mI (57510) GAP: Device found: ???[0m
+[0;32mI (58800) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (58800) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (58800) GAP: --RSSI: -57[0m
+[0;32mI (58800) GAP: Device found: ???[0m
+[0;32mI (59210) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (59210) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (59210) GAP: --RSSI: -57[0m
+[0;32mI (59210) GAP: Device found: ???[0m
+[0;32mI (59430) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (59430) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (59430) GAP: --RSSI: -56[0m
+[0;32mI (59430) GAP: Device found: ???[0m
+[0;32mI (60030) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (60030) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (60030) GAP: --RSSI: -58[0m
+[0;32mI (60030) GAP: Device found: ???[0m
+[0;32mI (60420) GAP: Device found: c0:e4:34:e0:95:08[0m
+[0;32mI (60420) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (60420) GAP: --RSSI: -94[0m
+[0;32mI (60420) GAP: Device found: ???[0m
+[0;32mI (60570) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (60570) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (60570) GAP: --RSSI: -59[0m
+[0;32mI (60570) GAP: Device found: ???[0m
+[0;32mI (60710) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (60710) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (60710) GAP: --RSSI: -59[0m
+[0;32mI (60710) GAP: Device found: ???[0m
+[0;32mI (61360) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (61360) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (61360) GAP: --RSSI: -57[0m
+[0;32mI (61370) GAP: Device found: ???[0m
+[0;32mI (61410) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (61420) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (61420) GAP: --RSSI: -57[0m
+[0;32mI (61420) GAP: Device found: ???[0m
+[0;32mI (61570) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (61570) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (61570) GAP: --RSSI: -59[0m
+[0;32mI (61570) GAP: Device found: ???[0m
+[0;32mI (62100) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (62100) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (62100) GAP: --RSSI: -57[0m
+[0;32mI (62100) GAP: Device found: ???[0m
+[0;32mI (62350) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (62350) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (62350) GAP: --RSSI: -61[0m
+[0;32mI (62350) GAP: Device found: ???[0m
+[0;32mI (67810) GAP: Device discovery stopped.[0m
+[0;32mI (67810) GAP: Discovery started.[0m
+[0;32mI (68850) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (68850) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (68850) GAP: --RSSI: -58[0m
+[0;32mI (68850) GAP: Device found: ???[0m
+[0;32mI (70250) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (70250) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (70250) GAP: --RSSI: -55[0m
+[0;32mI (70260) GAP: Device found: ???[0m
+[0;32mI (71450) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (71450) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (71450) GAP: --RSSI: -57[0m
+[0;32mI (71450) GAP: Device found: ???[0m
+[0;32mI (71480) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (71490) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (71490) GAP: --RSSI: -56[0m
+[0;32mI (71490) GAP: Device found: ???[0m
+[0;32mI (71740) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (71740) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (71740) GAP: --RSSI: -56[0m
+[0;32mI (71740) GAP: Device found: ???[0m
+[0;32mI (71990) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (71990) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (71990) GAP: --RSSI: -56[0m
+[0;32mI (71990) GAP: Device found: ???[0m
+[0;32mI (72280) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (72280) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (72280) GAP: --RSSI: -57[0m
+[0;32mI (72280) GAP: Device found: ???[0m
+[0;32mI (72430) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (72430) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (72430) GAP: --RSSI: -57[0m
+[0;32mI (72430) GAP: Device found: ???[0m
+[0;32mI (72770) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (72770) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (72770) GAP: --RSSI: -56[0m
+[0;32mI (72770) GAP: Device found: ???[0m
+[0;32mI (72810) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (72810) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (72810) GAP: --RSSI: -58[0m
+[0;32mI (72810) GAP: Device found: ???[0m
+[0;32mI (72940) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (72940) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (72940) GAP: --RSSI: -55[0m
+[0;32mI (72940) GAP: Device found: ???[0m
+[0;32mI (73450) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (73450) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (73450) GAP: --RSSI: -58[0m
+[0;32mI (73450) GAP: Device found: ???[0m
+[0;32mI (73980) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (73980) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (73980) GAP: --RSSI: -55[0m
+[0;32mI (73980) GAP: Device found: ???[0m
+[0;32mI (74030) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (74030) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (74030) GAP: --RSSI: -57[0m
+[0;32mI (74030) GAP: Device found: ???[0m
+[0;32mI (74620) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (74620) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (74620) GAP: --RSSI: -58[0m
+[0;32mI (74630) GAP: Device found: ???[0m
+[0;32mI (75120) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (75120) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (75120) GAP: --RSSI: -56[0m
+[0;32mI (75130) GAP: Device found: ???[0m
+[0;32mI (75350) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (75360) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (75360) GAP: --RSSI: -55[0m
+[0;32mI (75360) GAP: Device found: ???[0m
+[0;32mI (75410) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (75410) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (75410) GAP: --RSSI: -56[0m
+[0;32mI (75410) GAP: Device found: ???[0m
+[0;32mI (75830) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (75830) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (75830) GAP: --RSSI: -57[0m
+[0;32mI (75830) GAP: Device found: ???[0m
+[0;32mI (75880) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (75880) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (75880) GAP: --RSSI: -57[0m
+[0;32mI (75880) GAP: Device found: ???[0m
+[0;32mI (76000) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (76000) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (76000) GAP: --RSSI: -56[0m
+[0;32mI (76000) GAP: Device found: ???[0m
+[0;32mI (76580) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (76580) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (76580) GAP: --RSSI: -57[0m
+[0;32mI (76580) GAP: Device found: ???[0m
+[0;32mI (76630) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (76630) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (76630) GAP: --RSSI: -56[0m
+[0;32mI (76630) GAP: Device found: ???[0m
+[0;32mI (76960) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (76960) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (76960) GAP: --RSSI: -57[0m
+[0;32mI (76960) GAP: Device found: ???[0m
+[0;32mI (77570) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (77570) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (77570) GAP: --RSSI: -55[0m
+[0;32mI (77570) GAP: Device found: ???[0m
+[0;32mI (77780) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (77780) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (77780) GAP: --RSSI: -55[0m
+[0;32mI (77780) GAP: Device found: ???[0m
+[0;32mI (77930) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (77930) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (77930) GAP: --RSSI: -58[0m
+[0;32mI (77930) GAP: Device found: ???[0m
+[0;32mI (77980) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (77980) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (77980) GAP: --RSSI: -58[0m
+[0;32mI (77990) GAP: Device found: ???[0m
+[0;32mI (78390) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (78390) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (78390) GAP: --RSSI: -58[0m
+[0;32mI (78400) GAP: Device found: ???[0m
+[0;32mI (78940) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (78940) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (78940) GAP: --RSSI: -54[0m
+[0;32mI (78950) GAP: Device found: ???[0m
+[0;32mI (79100) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (79110) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (79110) GAP: --RSSI: -56[0m
+[0;32mI (79110) GAP: Device found: ???[0m
+[0;32mI (79150) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (79150) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (79150) GAP: --RSSI: -56[0m
+[0;32mI (79150) GAP: Device found: ???[0m
+[0;32mI (80450) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (80450) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (80450) GAP: --RSSI: -63[0m
+[0;32mI (80450) GAP: Device found: ???[0m
+[0;32mI (80970) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (80970) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (80970) GAP: --RSSI: -62[0m
+[0;32mI (80970) GAP: Device found: ???[0m
+[0;32mI (81610) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (81610) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (81610) GAP: --RSSI: -60[0m
+[0;32mI (81610) GAP: Device found: ???[0m
+[0;32mI (81650) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (81650) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (81650) GAP: --RSSI: -61[0m
+[0;32mI (81650) GAP: Device found: ???[0m
+[0;32mI (81690) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (81690) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (81690) GAP: --RSSI: -59[0m
+[0;32mI (81690) GAP: Device found: ???[0m
+[0;32mI (82080) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (82080) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (82080) GAP: --RSSI: -60[0m
+[0;32mI (82080) GAP: Device found: ???[0m
+[0;32mI (82660) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (82660) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (82660) GAP: --RSSI: -59[0m
+[0;32mI (82660) GAP: Device found: ???[0m
+[0;32mI (82900) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (82900) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (82900) GAP: --RSSI: -61[0m
+[0;32mI (82910) GAP: Device found: ???[0m
+[0;32mI (82940) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (82940) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (82940) GAP: --RSSI: -61[0m
+[0;32mI (82950) GAP: Device found: ???[0m
+[0;32mI (83020) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (83020) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (83020) GAP: --RSSI: -61[0m
+[0;32mI (83030) GAP: Device found: ???[0m
+[0;32mI (83410) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (83420) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (83420) GAP: --RSSI: -60[0m
+[0;32mI (83420) GAP: Device found: ???[0m
+[0;32mI (83880) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (83880) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (83880) GAP: --RSSI: -56[0m
+[0;32mI (83880) GAP: Device found: ???[0m
+[0;32mI (84200) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (84200) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (84200) GAP: --RSSI: -60[0m
+[0;32mI (84200) GAP: Device found: ???[0m
+[0;32mI (84250) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (84250) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (84250) GAP: --RSSI: -59[0m
+[0;32mI (84250) GAP: Device found: ???[0m
+[0;32mI (84680) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (84680) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (84680) GAP: --RSSI: -60[0m
+[0;32mI (84680) GAP: Device found: ???[0m
+[0;32mI (84850) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (84850) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (84850) GAP: --RSSI: -60[0m
+[0;32mI (84850) GAP: Device found: ???[0m
+[0;32mI (85050) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (85050) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (85050) GAP: --RSSI: -60[0m
+[0;32mI (85050) GAP: Device found: ???[0m
+[0;32mI (85470) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (85470) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (85470) GAP: --RSSI: -59[0m
+[0;32mI (85470) GAP: Device found: ???[0m
+[0;32mI (85520) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (85520) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (85520) GAP: --RSSI: -61[0m
+[0;32mI (85520) GAP: Device found: ???[0m
+[0;32mI (85700) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (85700) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (85700) GAP: --RSSI: -59[0m
+[0;32mI (85700) GAP: Device found: ???[0m
+[0;32mI (86270) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (86270) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (86270) GAP: --RSSI: -61[0m
+[0;32mI (86270) GAP: Device found: ???[0m
+[0;32mI (86690) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (86690) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (86690) GAP: --RSSI: -59[0m
+[0;32mI (86690) GAP: Device found: ???[0m
+[0;32mI (86740) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (86740) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (86740) GAP: --RSSI: -58[0m
+[0;32mI (86740) GAP: Device found: ???[0m
+[0;32mI (87000) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (87000) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (87000) GAP: --RSSI: -59[0m
+[0;32mI (87010) GAP: Device found: ???[0m
+[0;32mI (87590) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (87590) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (87590) GAP: --RSSI: -58[0m
+[0;32mI (87590) GAP: Device found: ???[0m
+[0;32mI (87790) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (87790) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (87790) GAP: --RSSI: -61[0m
+[0;32mI (87790) GAP: Device found: ???[0m
+[0;32mI (89150) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (89150) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (89150) GAP: --RSSI: -60[0m
+[0;32mI (89150) GAP: Device found: ???[0m
+[0;32mI (89340) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (89340) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (89340) GAP: --RSSI: -60[0m
+[0;32mI (89340) GAP: Device found: ???[0m
+[0;32mI (89720) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (89720) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (89720) GAP: --RSSI: -59[0m
+[0;32mI (89720) GAP: Device found: ???[0m
+[0;32mI (90270) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (90270) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (90270) GAP: --RSSI: -57[0m
+[0;32mI (90270) GAP: Device found: ???[0m
+[0;32mI (90440) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (90440) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (90440) GAP: --RSSI: -61[0m
+[0;32mI (90440) GAP: Device found: ???[0m
+[0;32mI (91060) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (91060) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (91060) GAP: --RSSI: -62[0m
+[0;32mI (91060) GAP: Device found: ???[0m
+[0;32mI (91120) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (91120) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (91120) GAP: --RSSI: -60[0m
+[0;32mI (91130) GAP: Device found: ???[0m
+[0;32mI (91390) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (91390) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (91390) GAP: --RSSI: -61[0m
+[0;32mI (91400) GAP: Device found: ???[0m
+[0;32mI (91590) GAP: Device found: c0:e4:34:e0:95:08[0m
+[0;32mI (91590) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (91590) GAP: --RSSI: -96[0m
+[0;32mI (91590) GAP: Device found: ???[0m
+[0;32mI (91790) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (91790) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (91790) GAP: --RSSI: -61[0m
+[0;32mI (91800) GAP: Device found: ???[0m
+[0;32mI (91830) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (91840) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (91840) GAP: --RSSI: -60[0m
+[0;32mI (91840) GAP: Device found: ???[0m
+[0;32mI (92210) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (92210) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (92210) GAP: --RSSI: -60[0m
+[0;32mI (92210) GAP: Device found: ???[0m
+[0;32mI (92400) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (92400) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (92400) GAP: --RSSI: -59[0m
+[0;32mI (92400) GAP: Device found: ???[0m
+[0;32mI (92770) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (92770) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (92770) GAP: --RSSI: -60[0m
+[0;32mI (92770) GAP: Device found: ???[0m
+[0;32mI (93000) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (93000) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (93000) GAP: --RSSI: -61[0m
+[0;32mI (93000) GAP: Device found: ???[0m
+[0;32mI (93040) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (93040) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (93040) GAP: --RSSI: -60[0m
+[0;32mI (93040) GAP: Device found: ???[0m
+[0;32mI (94400) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (94400) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (94400) GAP: --RSSI: -60[0m
+[0;32mI (94400) GAP: Device found: ???[0m
+[0;32mI (94930) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (94930) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (94930) GAP: --RSSI: -59[0m
+[0;32mI (94930) GAP: Device found: ???[0m
+[0;32mI (94990) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (94990) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (94990) GAP: --RSSI: -60[0m
+[0;32mI (94990) GAP: Device found: ???[0m
+[0;32mI (95630) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (95630) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (95630) GAP: --RSSI: -62[0m
+[0;32mI (95640) GAP: Device found: ???[0m
+[0;32mI (95700) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (95700) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (95700) GAP: --RSSI: -60[0m
+[0;32mI (95710) GAP: Device found: ???[0m
+[0;32mI (97020) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (97020) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (97020) GAP: --RSSI: -61[0m
+[0;32mI (97030) GAP: Device found: ???[0m
+[0;32mI (97570) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (97580) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (97580) GAP: --RSSI: -57[0m
+[0;32mI (97580) GAP: Device found: ???[0m
+[0;32mI (98210) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (98210) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (98210) GAP: --RSSI: -56[0m
+[0;32mI (98210) GAP: Device found: ???[0m
+[0;32mI (98250) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (98250) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (98250) GAP: --RSSI: -59[0m
+[0;32mI (98250) GAP: Device found: ???[0m
+[0;32mI (98300) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (98300) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (98300) GAP: --RSSI: -58[0m
+[0;32mI (98300) GAP: Device found: ???[0m
+[0;32mI (99510) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (99510) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (99510) GAP: --RSSI: -59[0m
+[0;32mI (99510) GAP: Device found: ???[0m
+[0;32mI (100120) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (100120) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (100120) GAP: --RSSI: -58[0m
+[0;32mI (100120) GAP: Device found: ???[0m
+[0;32mI (100760) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (100760) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (100760) GAP: --RSSI: -60[0m
+[0;32mI (100760) GAP: Device found: ???[0m
+[0;32mI (101950) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (101950) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (101950) GAP: --RSSI: -63[0m
+[0;32mI (101960) GAP: Device found: ???[0m
+[0;32mI (102140) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (102140) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (102140) GAP: --RSSI: -63[0m
+[0;32mI (102150) GAP: Device found: ???[0m
+[0;32mI (102490) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (102500) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (102500) GAP: --RSSI: -63[0m
+[0;32mI (102500) GAP: Device found: ???[0m
+[0;32mI (102730) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (102730) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (102730) GAP: --RSSI: -60[0m
+[0;32mI (102730) GAP: Device found: ???[0m
+[0;32mI (103190) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (103190) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (103190) GAP: --RSSI: -62[0m
+[0;32mI (103190) GAP: Device found: ???[0m
+[0;32mI (104420) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (104420) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (104420) GAP: --RSSI: -63[0m
+[0;32mI (104420) GAP: Device found: ???[0m
+[0;32mI (104450) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (104450) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (104450) GAP: --RSSI: -63[0m
+[0;32mI (104450) GAP: Device found: ???[0m
+[0;32mI (104650) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (104650) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (104650) GAP: --RSSI: -64[0m
+[0;32mI (104650) GAP: Device found: ???[0m
+[0;32mI (104800) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (104800) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (104800) GAP: --RSSI: -63[0m
+[0;32mI (104800) GAP: Device found: ???[0m
+[0;32mI (104910) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (104910) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (104910) GAP: --RSSI: -64[0m
+[0;32mI (104910) GAP: Device found: ???[0m
+[0;32mI (105600) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (105600) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (105600) GAP: --RSSI: -60[0m
+[0;32mI (105600) GAP: Device found: ???[0m
+[0;32mI (105650) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (105650) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (105650) GAP: --RSSI: -63[0m
+[0;32mI (105650) GAP: Device found: ???[0m
+[0;32mI (106820) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (106820) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (106820) GAP: --RSSI: -59[0m
+[0;32mI (106830) GAP: Device found: ???[0m
+[0;32mI (107060) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (107060) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (107060) GAP: --RSSI: -61[0m
+[0;32mI (107070) GAP: Device found: ???[0m
+[0;32mI (107310) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (107320) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (107320) GAP: --RSSI: -62[0m
+[0;32mI (107320) GAP: Device found: ???[0m
+[0;32mI (107790) GAP: Device found: e4:93:6a:31:13:b4[0m
+[0;32mI (107790) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (107790) GAP: --RSSI: -76[0m
+[0;32mI (107790) GAP: Device found: ???[0m
+[0;32mI (107910) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (107910) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (107910) GAP: --RSSI: -66[0m
+[0;32mI (107910) GAP: Device found: ???[0m
+[0;32mI (108030) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (108030) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (108030) GAP: --RSSI: -70[0m
+[0;32mI (108030) GAP: Device found: ???[0m
+[0;32mI (108070) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (108070) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (108070) GAP: --RSSI: -68[0m
+[0;32mI (108070) GAP: Device found: ???[0m
+[0;32mI (108580) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (108580) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (108580) GAP: --RSSI: -67[0m
+[0;32mI (108580) GAP: Device found: ???[0m
+[0;32mI (108620) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (108620) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (108620) GAP: --RSSI: -74[0m
+[0;32mI (108620) GAP: Device found: ???[0m
+[0;32mI (109220) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (109220) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (109220) GAP: --RSSI: -66[0m
+[0;32mI (109220) GAP: Device found: ???[0m
+[0;32mI (110320) GAP: Device found: e4:93:6a:31:13:b4[0m
+[0;32mI (110320) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (110320) GAP: --RSSI: -86[0m
+[0;32mI (110320) GAP: Device found: ???[0m
+[0;32mI (110510) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (110510) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (110510) GAP: --RSSI: -63[0m
+[0;32mI (110510) GAP: Device found: ???[0m
+[0;32mI (110820) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (110820) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (110820) GAP: --RSSI: -65[0m
+[0;32mI (110820) GAP: Device found: ???[0m
+[0;32mI (110850) GAP: Device found: e4:93:6a:31:13:b4[0m
+[0;32mI (110850) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (110850) GAP: --RSSI: -97[0m
+[0;32mI (110850) GAP: Device found: ???[0m
+[0;32mI (110990) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (110990) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (110990) GAP: --RSSI: -61[0m
+[0;32mI (110990) GAP: Device found: ???[0m
+[0;32mI (111350) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (111350) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (111350) GAP: --RSSI: -68[0m
+[0;32mI (111350) GAP: Device found: ???[0m
+[0;32mI (111540) GAP: Device found: e4:93:6a:31:13:b4[0m
+[0;32mI (111540) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (111540) GAP: --RSSI: -85[0m
+[0;32mI (111540) GAP: Device found: ???[0m
+[0;32mI (111670) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (111670) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (111670) GAP: --RSSI: -58[0m
+[0;32mI (111680) GAP: Device found: ???[0m
+[0;32mI (111720) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (111730) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (111730) GAP: --RSSI: -65[0m
+[0;32mI (111730) GAP: Device found: ???[0m
+[0;32mI (113000) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (113000) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (113000) GAP: --RSSI: -66[0m
+[0;32mI (113000) GAP: Device found: ???[0m
+[0;32mI (113160) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (113160) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (113160) GAP: --RSSI: -60[0m
+[0;32mI (113160) GAP: Device found: ???[0m
+[0;32mI (113480) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (113480) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (113480) GAP: --RSSI: -73[0m
+[0;32mI (113480) GAP: Device found: ???[0m
+[0;32mI (113530) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (113530) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (113530) GAP: --RSSI: -61[0m
+[0;32mI (113530) GAP: Device found: ???[0m
+[0;32mI (113720) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (113720) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (113720) GAP: --RSSI: -72[0m
+[0;32mI (113720) GAP: Device found: ???[0m
+[0;32mI (113770) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (113770) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (113770) GAP: --RSSI: -60[0m
+[0;32mI (113770) GAP: Device found: ???[0m
+[0;32mI (114360) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (114360) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (114360) GAP: --RSSI: -65[0m
+[0;32mI (114360) GAP: Device found: ???[0m
+[0;32mI (114600) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (114600) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (114600) GAP: --RSSI: -75[0m
+[0;32mI (114600) GAP: Device found: ???[0m
+[0;32mI (115090) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (115090) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (115090) GAP: --RSSI: -64[0m
+[0;32mI (115090) GAP: Device found: ???[0m
+[0;32mI (115340) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (115340) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (115340) GAP: --RSSI: -76[0m
+[0;32mI (115340) GAP: Device found: ???[0m
+[0;32mI (115670) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (115670) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (115670) GAP: --RSSI: -63[0m
+[0;32mI (115680) GAP: Device found: ???[0m
+[0;32mI (116290) GAP: Device found: cc:47:40:01:35:46[0m
+[0;32mI (116290) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (116290) GAP: --RSSI: -88[0m
+[0;32mI (116290) GAP: Device found: ???[0m
+[0;32mI (118330) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (118340) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (118340) GAP: --RSSI: -84[0m
+[0;32mI (118340) GAP: Device found: ???[0m
+[0;32mI (118880) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (118880) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (118880) GAP: --RSSI: -80[0m
+[0;32mI (118880) GAP: Device found: ???[0m
+[0;32mI (119470) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (119470) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (119470) GAP: --RSSI: -62[0m
+[0;32mI (119470) GAP: Device found: ???[0m
+[0;32mI (119720) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (119720) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (119720) GAP: --RSSI: -76[0m
+[0;32mI (119720) GAP: Device found: ???[0m
+[0;32mI (120020) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (120020) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (120020) GAP: --RSSI: -65[0m
+[0;32mI (120020) GAP: Device found: ???[0m
+[0;32mI (120440) GAP: Device found: e4:93:6a:31:13:b4[0m
+[0;32mI (120440) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (120440) GAP: --RSSI: -94[0m
+[0;32mI (120440) GAP: Device found: ???[0m
+[0;32mI (120520) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (120520) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (120520) GAP: --RSSI: -81[0m
+[0;32mI (120520) GAP: Device found: ???[0m
+[0;32mI (120870) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (120870) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (120870) GAP: --RSSI: -66[0m
+[0;32mI (120870) GAP: Device found: ???[0m
+[0;32mI (121010) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (121010) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (121010) GAP: --RSSI: -83[0m
+[0;32mI (121010) GAP: Device found: ???[0m
+[0;32mI (121060) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (121060) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (121060) GAP: --RSSI: -64[0m
+[0;32mI (121060) GAP: Device found: ???[0m
+[0;32mI (121520) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (121520) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (121520) GAP: --RSSI: -75[0m
+[0;32mI (121520) GAP: Device found: ???[0m
+[0;32mI (122050) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (122050) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (122050) GAP: --RSSI: -63[0m
+[0;32mI (122050) GAP: Device found: ???[0m
+[0;32mI (122190) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (122190) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (122190) GAP: --RSSI: -74[0m
+[0;32mI (122190) GAP: Device found: ???[0m
+[0;32mI (122230) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (122230) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (122230) GAP: --RSSI: -63[0m
+[0;32mI (122240) GAP: Device found: ???[0m
+[0;32mI (122560) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (122560) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (122560) GAP: --RSSI: -70[0m
+[0;32mI (122570) GAP: Device found: ???[0m
+[0;32mI (123400) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (123400) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (123400) GAP: --RSSI: -75[0m
+[0;32mI (123400) GAP: Device found: ???[0m
+[0;32mI (123440) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (123440) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (123440) GAP: --RSSI: -64[0m
+[0;32mI (123440) GAP: Device found: ???[0m
+[0;32mI (123920) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (123920) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (123920) GAP: --RSSI: -75[0m
+[0;32mI (123920) GAP: Device found: ???[0m
+[0;32mI (124240) GAP: Device found: e4:93:6a:31:13:b4[0m
+[0;32mI (124240) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (124240) GAP: --RSSI: -88[0m
+[0;32mI (124240) GAP: Device found: ???[0m
+[0;32mI (124580) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (124580) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (124580) GAP: --RSSI: -62[0m
+[0;32mI (124580) GAP: Device found: ???[0m
+[0;32mI (124670) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (124670) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (124670) GAP: --RSSI: -67[0m
+[0;32mI (124670) GAP: Device found: ???[0m
+[0;32mI (124720) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (124720) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (124720) GAP: --RSSI: -67[0m
+[0;32mI (124720) GAP: Device found: ???[0m
+[0;32mI (125360) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (125360) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (125360) GAP: --RSSI: -62[0m
+[0;32mI (125360) GAP: Device found: ???[0m
+[0;32mI (125670) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (125670) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (125670) GAP: --RSSI: -70[0m
+[0;32mI (125670) GAP: Device found: ???[0m
+[0;32mI (125800) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (125800) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (125800) GAP: --RSSI: -63[0m
+[0;32mI (125800) GAP: Device found: ???[0m
+[0;32mI (125970) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (125970) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (125970) GAP: --RSSI: -70[0m
+[0;32mI (125970) GAP: Device found: ???[0m
+[0;32mI (126010) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (126010) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (126010) GAP: --RSSI: -70[0m
+[0;32mI (126020) GAP: Device found: ???[0m
+[0;32mI (126570) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (126570) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (126570) GAP: --RSSI: -63[0m
+[0;32mI (126580) GAP: Device found: ???[0m
+[0;32mI (126670) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (126680) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (126680) GAP: --RSSI: -68[0m
+[0;32mI (126680) GAP: Device found: ???[0m
+[0;32mI (126750) GAP: Device found: e4:93:6a:31:13:b4[0m
+[0;32mI (126750) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (126750) GAP: --RSSI: -86[0m
+[0;32mI (126750) GAP: Device found: ???[0m
+[0;32mI (127000) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (127000) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (127000) GAP: --RSSI: -64[0m
+[0;32mI (127000) GAP: Device found: ???[0m
+[0;32mI (127170) GAP: Device found: e4:93:6a:31:13:b4[0m
+[0;32mI (127170) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (127170) GAP: --RSSI: -81[0m
+[0;32mI (127170) GAP: Device found: ???[0m
+[0;32mI (134410) GAP: Device discovery stopped.[0m
+[0;32mI (134420) GAP: Discovery started.[0m
+[0;32mI (135130) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (135130) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (135130) GAP: --RSSI: -62[0m
+[0;32mI (135130) GAP: Device found: ???[0m
+[0;32mI (135650) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (135650) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (135650) GAP: --RSSI: -66[0m
+[0;32mI (135650) GAP: Device found: ???[0m
+[0;32mI (135830) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (135830) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (135830) GAP: --RSSI: -64[0m
+[0;32mI (135830) GAP: Device found: ???[0m
+[0;32mI (136040) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (136040) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (136040) GAP: --RSSI: -74[0m
+[0;32mI (136040) GAP: Device found: ???[0m
+[0;32mI (136360) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (136360) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (136360) GAP: --RSSI: -62[0m
+[0;32mI (136370) GAP: Device found: ???[0m
+[0;32mI (136400) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (136400) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (136400) GAP: --RSSI: -71[0m
+[0;32mI (136410) GAP: Device found: ???[0m
+[0;32mI (136920) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (136920) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (136920) GAP: --RSSI: -63[0m
+[0;32mI (136930) GAP: Device found: ???[0m
+[0;32mI (136960) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (136970) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (136970) GAP: --RSSI: -81[0m
+[0;32mI (136970) GAP: Device found: ???[0m
+[0;32mI (137000) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (137000) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (137000) GAP: --RSSI: -65[0m
+[0;32mI (137000) GAP: Device found: ???[0m
+[0;32mI (137290) GAP: Device found: c0:e4:34:e0:95:08[0m
+[0;32mI (137290) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (137290) GAP: --RSSI: -96[0m
+[0;32mI (137290) GAP: Device found: ???[0m
+[0;32mI (137500) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (137500) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (137500) GAP: --RSSI: -66[0m
+[0;32mI (137500) GAP: Device found: ???[0m
+[0;32mI (137700) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (137700) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (137700) GAP: --RSSI: -63[0m
+[0;32mI (137700) GAP: Device found: ???[0m
+[0;32mI (138050) GAP: Device found: e4:93:6a:31:13:b4[0m
+[0;32mI (138050) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (138050) GAP: --RSSI: -86[0m
+[0;32mI (138050) GAP: Device found: ???[0m
+[0;32mI (138540) GAP: Device found: e4:93:6a:31:13:b4[0m
+[0;32mI (138540) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (138540) GAP: --RSSI: -85[0m
+[0;32mI (138540) GAP: Device found: ???[0m
+[0;32mI (138930) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (138930) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (138930) GAP: --RSSI: -66[0m
+[0;32mI (138930) GAP: Device found: ???[0m
+[0;32mI (139460) GAP: Device found: e4:93:6a:31:13:b4[0m
+[0;32mI (139460) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (139460) GAP: --RSSI: -83[0m
+[0;32mI (139460) GAP: Device found: ???[0m
+[0;32mI (139480) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (139480) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (139480) GAP: --RSSI: -82[0m
+[0;32mI (139480) GAP: Device found: ???[0m
+[0;32mI (139860) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (139860) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (139860) GAP: --RSSI: -64[0m
+[0;32mI (139860) GAP: Device found: ???[0m
+[0;32mI (140270) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (140270) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (140270) GAP: --RSSI: -71[0m
+[0;32mI (140270) GAP: Device found: ???[0m
+[0;32mI (140650) GAP: Device found: e4:93:6a:31:13:b4[0m
+[0;32mI (140650) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (140650) GAP: --RSSI: -82[0m
+[0;32mI (140650) GAP: Device found: ???[0m
+[0;32mI (141560) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (141560) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (141560) GAP: --RSSI: -64[0m
+[0;32mI (141570) GAP: Device found: ???[0m
+[0;32mI (142200) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (142200) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (142200) GAP: --RSSI: -77[0m
+[0;32mI (142210) GAP: Device found: ???[0m
+[0;32mI (142310) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (142310) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (142310) GAP: --RSSI: -66[0m
+[0;32mI (142320) GAP: Device found: ???[0m
+[0;32mI (142410) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (142420) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (142420) GAP: --RSSI: -71[0m
+[0;32mI (142420) GAP: Device found: ???[0m
+[0;32mI (142810) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (142810) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (142810) GAP: --RSSI: -64[0m
+[0;32mI (142810) GAP: Device found: ???[0m
+[0;32mI (142850) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (142850) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (142850) GAP: --RSSI: -68[0m
+[0;32mI (142850) GAP: Device found: ???[0m
+[0;32mI (143410) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (143410) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (143410) GAP: --RSSI: -65[0m
+[0;32mI (143410) GAP: Device found: ???[0m
+[0;32mI (143840) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (143840) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (143840) GAP: --RSSI: -76[0m
+[0;32mI (143840) GAP: Device found: ???[0m
+[0;32mI (144050) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (144050) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (144050) GAP: --RSSI: -67[0m
+[0;32mI (144050) GAP: Device found: ???[0m
+[0;32mI (144090) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (144090) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (144090) GAP: --RSSI: -73[0m
+[0;32mI (144090) GAP: Device found: ???[0m
+[0;32mI (144550) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (144550) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (144550) GAP: --RSSI: -64[0m
+[0;32mI (144550) GAP: Device found: ???[0m
+[0;32mI (145310) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (145310) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (145310) GAP: --RSSI: -86[0m
+[0;32mI (145310) GAP: Device found: ???[0m
+[0;32mI (145350) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (145350) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (145350) GAP: --RSSI: -65[0m
+[0;32mI (145360) GAP: Device found: ???[0m
+[0;32mI (145760) GAP: Device found: e4:93:6a:31:13:b4[0m
+[0;32mI (145760) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (145760) GAP: --RSSI: -86[0m
+[0;32mI (145770) GAP: Device found: ???[0m
+[0;32mI (145800) GAP: Device found: e4:93:6a:31:13:b4[0m
+[0;32mI (145800) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (145800) GAP: --RSSI: -81[0m
+[0;32mI (145810) GAP: Device found: ???[0m
+[0;32mI (146660) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (146660) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (146660) GAP: --RSSI: -68[0m
+[0;32mI (146670) GAP: Device found: ???[0m
+[0;32mI (149270) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (149270) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (149270) GAP: --RSSI: -64[0m
+[0;32mI (149270) GAP: Device found: ???[0m
+[0;32mI (149460) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (149460) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (149460) GAP: --RSSI: -65[0m
+[0;32mI (149460) GAP: Device found: ???[0m
+[0;32mI (150440) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (150440) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (150440) GAP: --RSSI: -78[0m
+[0;32mI (150440) GAP: Device found: ???[0m
+[0;32mI (150480) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (150480) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (150480) GAP: --RSSI: -79[0m
+[0;32mI (150480) GAP: Device found: ???[0m
+[0;32mI (150670) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (150670) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (150670) GAP: --RSSI: -66[0m
+[0;32mI (150670) GAP: Device found: ???[0m
+[0;32mI (151130) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (151130) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (151130) GAP: --RSSI: -82[0m
+[0;32mI (151130) GAP: Device found: ???[0m
+[0;32mI (151760) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (151760) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (151760) GAP: --RSSI: -78[0m
+[0;32mI (151760) GAP: Device found: ???[0m
+[0;32mI (154490) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (154490) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (154490) GAP: --RSSI: -72[0m
+[0;32mI (154500) GAP: Device found: ???[0m
+[0;32mI (154540) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (154540) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (154540) GAP: --RSSI: -65[0m
+[0;32mI (154550) GAP: Device found: ???[0m
+[0;32mI (154690) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (154700) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (154700) GAP: --RSSI: -68[0m
+[0;32mI (154700) GAP: Device found: ???[0m
+[0;32mI (155240) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (155240) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (155240) GAP: --RSSI: -66[0m
+[0;32mI (155240) GAP: Device found: ???[0m
+[0;32mI (155400) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (155400) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (155400) GAP: --RSSI: -75[0m
+[0;32mI (155400) GAP: Device found: ???[0m
+[0;32mI (155460) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (155460) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (155460) GAP: --RSSI: -64[0m
+[0;32mI (155460) GAP: Device found: ???[0m
+[0;32mI (155660) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (155660) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (155660) GAP: --RSSI: -71[0m
+[0;32mI (155660) GAP: Device found: ???[0m
+[0;32mI (155710) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (155710) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (155710) GAP: --RSSI: -63[0m
+[0;32mI (155710) GAP: Device found: ???[0m
+[0;32mI (155800) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (155800) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (155800) GAP: --RSSI: -72[0m
+[0;32mI (155800) GAP: Device found: ???[0m
+[0;32mI (155990) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (155990) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (155990) GAP: --RSSI: -63[0m
+[0;32mI (155990) GAP: Device found: ???[0m
+[0;32mI (157040) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (157040) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (157040) GAP: --RSSI: -67[0m
+[0;32mI (157040) GAP: Device found: ???[0m
+[0;32mI (157090) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (157090) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (157090) GAP: --RSSI: -74[0m
+[0;32mI (157090) GAP: Device found: ???[0m
+[0;32mI (157640) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (157640) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (157640) GAP: --RSSI: -62[0m
+[0;32mI (157640) GAP: Device found: ???[0m
+[0;32mI (157800) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (157800) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (157800) GAP: --RSSI: -56[0m
+[0;32mI (157800) GAP: Device found: ???[0m
+[0;32mI (157950) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (157950) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (157950) GAP: --RSSI: -59[0m
+[0;32mI (157960) GAP: Device found: ???[0m
+[0;32mI (158300) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (158300) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (158300) GAP: --RSSI: -59[0m
+[0;32mI (158310) GAP: Device found: ???[0m
+[0;32mI (158340) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (158340) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (158340) GAP: --RSSI: -60[0m
+[0;32mI (158350) GAP: Device found: ???[0m
+[0;32mI (159610) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (159610) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (159610) GAP: --RSSI: -60[0m
+[0;32mI (159610) GAP: Device found: ???[0m
+[0;32mI (160220) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (160220) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (160220) GAP: --RSSI: -57[0m
+[0;32mI (160220) GAP: Device found: ???[0m
+[0;32mI (160350) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (160350) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (160350) GAP: --RSSI: -58[0m
+[0;32mI (160350) GAP: Device found: ???[0m
+[0;32mI (160810) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (160810) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (160810) GAP: --RSSI: -58[0m
+[0;32mI (160810) GAP: Device found: ???[0m
+[0;32mI (160930) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (160930) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (160930) GAP: --RSSI: -58[0m
+[0;32mI (160930) GAP: Device found: ???[0m
+[0;32mI (160970) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (160970) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (160970) GAP: --RSSI: -59[0m
+[0;32mI (160970) GAP: Device found: ???[0m
+[0;32mI (161010) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (161010) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (161010) GAP: --RSSI: -58[0m
+[0;32mI (161010) GAP: Device found: ???[0m
+[0;32mI (161450) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (161450) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (161450) GAP: --RSSI: -64[0m
+[0;32mI (161450) GAP: Device found: ???[0m
+[0;32mI (162060) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (162060) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (162060) GAP: --RSSI: -58[0m
+[0;32mI (162070) GAP: Device found: ???[0m
+[0;32mI (162150) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (162150) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (162150) GAP: --RSSI: -59[0m
+[0;32mI (162160) GAP: Device found: ???[0m
+[0;32mI (162190) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (162190) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (162190) GAP: --RSSI: -59[0m
+[0;32mI (162200) GAP: Device found: ???[0m
+[0;32mI (162620) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (162630) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (162630) GAP: --RSSI: -56[0m
+[0;32mI (162630) GAP: Device found: ???[0m
+[0;32mI (162910) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (162910) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (162910) GAP: --RSSI: -61[0m
+[0;32mI (162910) GAP: Device found: ???[0m
+[0;32mI (163380) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (163380) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (163380) GAP: --RSSI: -58[0m
+[0;32mI (163380) GAP: Device found: ???[0m
+[0;32mI (163430) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (163430) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (163430) GAP: --RSSI: -62[0m
+[0;32mI (163430) GAP: Device found: ???[0m
+[0;32mI (163990) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (163990) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (163990) GAP: --RSSI: -59[0m
+[0;32mI (163990) GAP: Device found: ???[0m
+[0;32mI (164390) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (164390) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (164390) GAP: --RSSI: -59[0m
+[0;32mI (164390) GAP: Device found: ???[0m
+[0;32mI (164570) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (164570) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (164570) GAP: --RSSI: -59[0m
+[0;32mI (164570) GAP: Device found: ???[0m
+[0;32mI (164780) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (164780) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (164780) GAP: --RSSI: -60[0m
+[0;32mI (164780) GAP: Device found: ???[0m
+[0;32mI (166060) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (166060) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (166060) GAP: --RSSI: -59[0m
+[0;32mI (166060) GAP: Device found: ???[0m
+[0;32mI (166740) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (166740) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (166740) GAP: --RSSI: -60[0m
+[0;32mI (166740) GAP: Device found: ???[0m
+[0;32mI (167170) GAP: Device found: e4:93:6a:31:13:b4[0m
+[0;32mI (167170) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (167170) GAP: --RSSI: -93[0m
+[0;32mI (167170) GAP: Device found: ???[0m
+[0;32mI (167210) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (167210) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (167210) GAP: --RSSI: -59[0m
+[0;32mI (167220) GAP: Device found: ???[0m
+[0;32mI (167260) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (167270) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (167270) GAP: --RSSI: -57[0m
+[0;32mI (167270) GAP: Device found: ???[0m
+[0;32mI (167900) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (167900) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (167900) GAP: --RSSI: -60[0m
+[0;32mI (167900) GAP: Device found: ???[0m
+[0;32mI (168450) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (168450) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (168450) GAP: --RSSI: -57[0m
+[0;32mI (168450) GAP: Device found: ???[0m
+[0;32mI (168530) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (168530) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (168530) GAP: --RSSI: -59[0m
+[0;32mI (168530) GAP: Device found: ???[0m
+[0;32mI (168980) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (168980) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (168980) GAP: --RSSI: -58[0m
+[0;32mI (168980) GAP: Device found: ???[0m
+[0;32mI (169020) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (169020) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (169020) GAP: --RSSI: -58[0m
+[0;32mI (169020) GAP: Device found: ???[0m
+[0;32mI (169370) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (169370) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (169370) GAP: --RSSI: -59[0m
+[0;32mI (169370) GAP: Device found: ???[0m
+[0;32mI (169720) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (169720) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (169720) GAP: --RSSI: -59[0m
+[0;32mI (169720) GAP: Device found: ???[0m
+[0;32mI (169760) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (169760) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (169760) GAP: --RSSI: -60[0m
+[0;32mI (169760) GAP: Device found: ???[0m
+[0;32mI (170110) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (170110) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (170110) GAP: --RSSI: -57[0m
+[0;32mI (170110) GAP: Device found: ???[0m
+[0;32mI (170210) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (170210) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (170210) GAP: --RSSI: -62[0m
+[0;32mI (170210) GAP: Device found: ???[0m
+[0;32mI (170830) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (170830) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (170830) GAP: --RSSI: -57[0m
+[0;32mI (170830) GAP: Device found: ???[0m
+[0;32mI (170980) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (170980) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (170980) GAP: --RSSI: -56[0m
+[0;32mI (170990) GAP: Device found: ???[0m
+[0;32mI (171020) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (171020) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (171020) GAP: --RSSI: -60[0m
+[0;32mI (171030) GAP: Device found: ???[0m
+[0;32mI (171210) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (171210) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (171210) GAP: --RSSI: -59[0m
+[0;32mI (171220) GAP: Device found: ???[0m
+[0;32mI (171580) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (171590) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (171590) GAP: --RSSI: -57[0m
+[0;32mI (171590) GAP: Device found: ???[0m
+[0;32mI (171950) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (171950) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (171950) GAP: --RSSI: -64[0m
+[0;32mI (171950) GAP: Device found: ???[0m
+[0;32mI (172260) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (172260) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (172260) GAP: --RSSI: -57[0m
+[0;32mI (172260) GAP: Device found: ???[0m
+[0;32mI (172300) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (172300) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (172300) GAP: --RSSI: -57[0m
+[0;32mI (172300) GAP: Device found: ???[0m
+[0;32mI (173530) GAP: Device found: c0:e4:34:e0:95:08[0m
+[0;32mI (173530) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (173530) GAP: --RSSI: -96[0m
+[0;32mI (173530) GAP: Device found: ???[0m
+[0;32mI (174880) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (174880) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (174880) GAP: --RSSI: -57[0m
+[0;32mI (174880) GAP: Device found: ???[0m
+[0;32mI (176210) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (176210) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (176210) GAP: --RSSI: -56[0m
+[0;32mI (176210) GAP: Device found: ???[0m
+[0;32mI (176500) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (176500) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (176500) GAP: --RSSI: -63[0m
+[0;32mI (176510) GAP: Device found: ???[0m
+[0;32mI (177000) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (177000) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (177000) GAP: --RSSI: -57[0m
+[0;32mI (177010) GAP: Device found: ???[0m
+[0;32mI (177260) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (177260) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (177260) GAP: --RSSI: -60[0m
+[0;32mI (177270) GAP: Device found: ???[0m
+[0;32mI (177440) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (177450) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (177450) GAP: --RSSI: -58[0m
+[0;32mI (177450) GAP: Device found: ???[0m
+[0;32mI (177610) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (177610) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (177610) GAP: --RSSI: -60[0m
+[0;32mI (177610) GAP: Device found: ???[0m
+[0;32mI (177920) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (177920) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (177920) GAP: --RSSI: -57[0m
+[0;32mI (177920) GAP: Device found: ???[0m
+[0;32mI (178230) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (178230) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (178230) GAP: --RSSI: -62[0m
+[0;32mI (178230) GAP: Device found: ???[0m
+[0;32mI (178340) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (178340) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (178340) GAP: --RSSI: -59[0m
+[0;32mI (178340) GAP: Device found: ???[0m
+[0;32mI (178580) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (178580) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (178580) GAP: --RSSI: -58[0m
+[0;32mI (178580) GAP: Device found: ???[0m
+[0;32mI (178620) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (178620) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (178620) GAP: --RSSI: -59[0m
+[0;32mI (178620) GAP: Device found: ???[0m
+[0;32mI (178930) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (178930) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (178930) GAP: --RSSI: -58[0m
+[0;32mI (178930) GAP: Device found: ???[0m
+[0;32mI (179170) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (179170) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (179170) GAP: --RSSI: -58[0m
+[0;32mI (179170) GAP: Device found: ???[0m
+[0;32mI (179600) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (179600) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (179600) GAP: --RSSI: -59[0m
+[0;32mI (179600) GAP: Device found: ???[0m
+[0;32mI (179680) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (179680) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (179680) GAP: --RSSI: -58[0m
+[0;32mI (179680) GAP: Device found: ???[0m
+[0;32mI (179800) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (179800) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (179800) GAP: --RSSI: -59[0m
+[0;32mI (179800) GAP: Device found: ???[0m
+[0;32mI (179970) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (179970) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (179970) GAP: --RSSI: -59[0m
+[0;32mI (179970) GAP: Device found: ???[0m
+[0;32mI (180160) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (180160) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (180160) GAP: --RSSI: -56[0m
+[0;32mI (180170) GAP: Device found: ???[0m
+[0;32mI (180580) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (180580) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (180580) GAP: --RSSI: -55[0m
+[0;32mI (180590) GAP: Device found: ???[0m
+[0;32mI (180740) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (180740) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (180740) GAP: --RSSI: -59[0m
+[0;32mI (180750) GAP: Device found: ???[0m
+[0;32mI (181220) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (181220) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (181220) GAP: --RSSI: -55[0m
+[0;32mI (181230) GAP: Device found: ???[0m
+[0;32mI (181260) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (181260) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (181260) GAP: --RSSI: -59[0m
+[0;32mI (181260) GAP: Device found: ???[0m
+[0;32mI (181520) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (181520) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (181520) GAP: --RSSI: -56[0m
+[0;32mI (181520) GAP: Device found: ???[0m
+[0;32mI (181990) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (181990) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (181990) GAP: --RSSI: -60[0m
+[0;32mI (181990) GAP: Device found: ???[0m
+[0;32mI (182030) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (182030) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (182030) GAP: --RSSI: -55[0m
+[0;32mI (182030) GAP: Device found: ???[0m
+[0;32mI (182370) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (182370) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (182370) GAP: --RSSI: -59[0m
+[0;32mI (182370) GAP: Device found: ???[0m
+[0;32mI (182460) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (182460) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (182460) GAP: --RSSI: -55[0m
+[0;32mI (182460) GAP: Device found: ???[0m
+[0;32mI (182500) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (182500) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (182500) GAP: --RSSI: -56[0m
+[0;32mI (182500) GAP: Device found: ???[0m
+[0;32mI (185010) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (185010) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (185010) GAP: --RSSI: -58[0m
+[0;32mI (185020) GAP: Device found: ???[0m
+[0;32mI (185080) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (185090) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (185090) GAP: --RSSI: -55[0m
+[0;32mI (185090) GAP: Device found: ???[0m
+[0;32mI (185220) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (185220) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (185220) GAP: --RSSI: -60[0m
+[0;32mI (185220) GAP: Device found: ???[0m
+[0;32mI (185480) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (185480) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (185480) GAP: --RSSI: -56[0m
+[0;32mI (185480) GAP: Device found: ???[0m
+[0;32mI (185960) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (185960) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (185960) GAP: --RSSI: -59[0m
+[0;32mI (185960) GAP: Device found: ???[0m
+[0;32mI (186140) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (186140) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (186140) GAP: --RSSI: -59[0m
+[0;32mI (186140) GAP: Device found: ???[0m
+[0;32mI (186220) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (186220) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (186220) GAP: --RSSI: -57[0m
+[0;32mI (186220) GAP: Device found: ???[0m
+[0;32mI (186260) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (186260) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (186260) GAP: --RSSI: -59[0m
+[0;32mI (186260) GAP: Device found: ???[0m
+[0;32mI (186300) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (186300) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (186300) GAP: --RSSI: -57[0m
+[0;32mI (186300) GAP: Device found: ???[0m
+[0;32mI (186400) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (186400) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (186400) GAP: --RSSI: -58[0m
+[0;32mI (186400) GAP: Device found: ???[0m
+[0;32mI (186500) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (186500) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (186500) GAP: --RSSI: -60[0m
+[0;32mI (186500) GAP: Device found: ???[0m
+[0;32mI (186620) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (186620) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (186620) GAP: --RSSI: -53[0m
+[0;32mI (186620) GAP: Device found: ???[0m
+[0;32mI (187150) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (187150) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (187150) GAP: --RSSI: -61[0m
+[0;32mI (187150) GAP: Device found: ???[0m
+[0;32mI (187500) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (187500) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (187500) GAP: --RSSI: -56[0m
+[0;32mI (187500) GAP: Device found: ???[0m
+[0;32mI (187570) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (187570) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (187570) GAP: --RSSI: -60[0m
+[0;32mI (187580) GAP: Device found: ???[0m
+[0;32mI (187620) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (187620) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (187620) GAP: --RSSI: -56[0m
+[0;32mI (187630) GAP: Device found: ???[0m
+[0;32mI (188260) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (188260) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (188260) GAP: --RSSI: -56[0m
+[0;32mI (188270) GAP: Device found: ???[0m
+[0;32mI (188460) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (188470) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (188470) GAP: --RSSI: -54[0m
+[0;32mI (188470) GAP: Device found: ???[0m
+[0;32mI (188580) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (188580) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (188580) GAP: --RSSI: -60[0m
+[0;32mI (188580) GAP: Device found: ???[0m
+[0;32mI (188890) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (188890) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (188890) GAP: --RSSI: -56[0m
+[0;32mI (188890) GAP: Device found: ???[0m
+[0;32mI (188930) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (188930) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (188930) GAP: --RSSI: -59[0m
+[0;32mI (188930) GAP: Device found: ???[0m
+[0;32mI (189370) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (189370) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (189370) GAP: --RSSI: -56[0m
+[0;32mI (189370) GAP: Device found: ???[0m
+[0;32mI (189940) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (189940) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (189940) GAP: --RSSI: -57[0m
+[0;32mI (189940) GAP: Device found: ???[0m
+[0;32mI (190240) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (190240) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (190240) GAP: --RSSI: -56[0m
+[0;32mI (190240) GAP: Device found: ???[0m
+[0;32mI (190280) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (190280) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (190280) GAP: --RSSI: -59[0m
+[0;32mI (190280) GAP: Device found: ???[0m
+[0;32mI (191420) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (191420) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (191420) GAP: --RSSI: -59[0m
+[0;32mI (191430) GAP: Device found: ???[0m
+[0;32mI (192060) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (192060) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (192060) GAP: --RSSI: -57[0m
+[0;32mI (192070) GAP: Device found: ???[0m
+[0;32mI (192560) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (192560) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (192560) GAP: --RSSI: -59[0m
+[0;32mI (192570) GAP: Device found: ???[0m
+[0;32mI (192800) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (192810) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (192810) GAP: --RSSI: -58[0m
+[0;32mI (192810) GAP: Device found: ???[0m
+[0;32mI (192850) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (192850) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (192850) GAP: --RSSI: -59[0m
+[0;32mI (192850) GAP: Device found: ???[0m
+[0;32mI (192930) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (192930) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (192930) GAP: --RSSI: -56[0m
+[0;32mI (192930) GAP: Device found: ???[0m
+[0;32mI (193270) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (193270) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (193270) GAP: --RSSI: -59[0m
+[0;32mI (193270) GAP: Device found: ???[0m
+[0;32mI (193520) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (193520) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (193520) GAP: --RSSI: -56[0m
+[0;32mI (193520) GAP: Device found: ???[0m
+[0;32mI (194040) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (194040) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (194040) GAP: --RSSI: -58[0m
+[0;32mI (194040) GAP: Device found: ???[0m
+[0;32mI (194120) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (194120) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (194120) GAP: --RSSI: -54[0m
+[0;32mI (194120) GAP: Device found: ???[0m
+[0;32mI (194170) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (194170) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (194170) GAP: --RSSI: -55[0m
+[0;32mI (194170) GAP: Device found: ???[0m
+[0;32mI (194630) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (194630) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (194630) GAP: --RSSI: -56[0m
+[0;32mI (194630) GAP: Device found: ???[0m
+[0;32mI (195100) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (195100) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (195100) GAP: --RSSI: -57[0m
+[0;32mI (195100) GAP: Device found: ???[0m
+[0;32mI (195420) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (195420) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (195420) GAP: --RSSI: -59[0m
+[0;32mI (195430) GAP: Device found: ???[0m
+[0;32mI (195470) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (195470) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (195470) GAP: --RSSI: -56[0m
+[0;32mI (195480) GAP: Device found: ???[0m
+[0;32mI (201010) GAP: Device discovery stopped.[0m
+[0;32mI (201010) GAP: Discovery started.[0m
+[0;32mI (201250) GAP: Device found: e4:93:6a:31:13:b4[0m
+[0;32mI (201250) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (201250) GAP: --RSSI: -86[0m
+[0;32mI (201260) GAP: Device found: ???[0m
+[0;32mI (201830) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (201830) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (201830) GAP: --RSSI: -60[0m
+[0;32mI (201830) GAP: Device found: ???[0m
+[0;32mI (202000) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (202000) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (202000) GAP: --RSSI: -54[0m
+[0;32mI (202000) GAP: Device found: ???[0m
+[0;32mI (202200) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (202200) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (202200) GAP: --RSSI: -57[0m
+[0;32mI (202200) GAP: Device found: ???[0m
+[0;32mI (202280) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (202280) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (202280) GAP: --RSSI: -57[0m
+[0;32mI (202280) GAP: Device found: ???[0m
+[0;32mI (202600) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (202600) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (202600) GAP: --RSSI: -57[0m
+[0;32mI (202600) GAP: Device found: ???[0m
+[0;32mI (203060) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (203060) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (203060) GAP: --RSSI: -57[0m
+[0;32mI (203060) GAP: Device found: ???[0m
+[0;32mI (203110) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (203110) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (203110) GAP: --RSSI: -57[0m
+[0;32mI (203110) GAP: Device found: ???[0m
+[0;32mI (204360) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (204360) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (204360) GAP: --RSSI: -58[0m
+[0;32mI (204370) GAP: Device found: ???[0m
+[0;32mI (204600) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (204600) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (204600) GAP: --RSSI: -59[0m
+[0;32mI (204610) GAP: Device found: ???[0m
+[0;32mI (205190) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (205200) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (205200) GAP: --RSSI: -56[0m
+[0;32mI (205200) GAP: Device found: ???[0m
+[0;32mI (205260) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (205260) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (205260) GAP: --RSSI: -58[0m
+[0;32mI (205260) GAP: Device found: ???[0m
+[0;32mI (205510) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (205510) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (205510) GAP: --RSSI: -55[0m
+[0;32mI (205510) GAP: Device found: ???[0m
+[0;32mI (205620) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (205620) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (205620) GAP: --RSSI: -58[0m
+[0;32mI (205620) GAP: Device found: ???[0m
+[0;32mI (205660) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (205660) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (205660) GAP: --RSSI: -57[0m
+[0;32mI (205660) GAP: Device found: ???[0m
+[0;32mI (205880) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (205880) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (205880) GAP: --RSSI: -54[0m
+[0;32mI (205880) GAP: Device found: ???[0m
+[0;32mI (206530) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (206530) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (206530) GAP: --RSSI: -56[0m
+[0;32mI (206530) GAP: Device found: ???[0m
+[0;32mI (206910) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (206910) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (206910) GAP: --RSSI: -59[0m
+[0;32mI (206910) GAP: Device found: ???[0m
+[0;32mI (206950) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (206950) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (206950) GAP: --RSSI: -58[0m
+[0;32mI (206950) GAP: Device found: ???[0m
+[0;32mI (207130) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (207130) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (207130) GAP: --RSSI: -59[0m
+[0;32mI (207130) GAP: Device found: ???[0m
+[0;32mI (207450) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (207450) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (207450) GAP: --RSSI: -57[0m
+[0;32mI (207450) GAP: Device found: ???[0m
+[0;32mI (207990) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (207990) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (207990) GAP: --RSSI: -56[0m
+[0;32mI (208000) GAP: Device found: ???[0m
+[0;32mI (208200) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (208200) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (208200) GAP: --RSSI: -58[0m
+[0;32mI (208210) GAP: Device found: ???[0m
+[0;32mI (208240) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (208250) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (208250) GAP: --RSSI: -56[0m
+[0;32mI (208250) GAP: Device found: ???[0m
+[0;32mI (208700) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (208700) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (208700) GAP: --RSSI: -60[0m
+[0;32mI (208700) GAP: Device found: ???[0m
+[0;32mI (209120) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (209120) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (209120) GAP: --RSSI: -54[0m
+[0;32mI (209120) GAP: Device found: ???[0m
+[0;32mI (209530) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (209530) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (209530) GAP: --RSSI: -59[0m
+[0;32mI (209530) GAP: Device found: ???[0m
+[0;32mI (209580) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (209580) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (209580) GAP: --RSSI: -58[0m
+[0;32mI (209580) GAP: Device found: ???[0m
+[0;32mI (209660) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (209660) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (209660) GAP: --RSSI: -58[0m
+[0;32mI (209660) GAP: Device found: ???[0m
+[0;32mI (210140) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (210140) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (210140) GAP: --RSSI: -58[0m
+[0;32mI (210140) GAP: Device found: ???[0m
+[0;32mI (210310) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (210310) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (210310) GAP: --RSSI: -57[0m
+[0;32mI (210310) GAP: Device found: ???[0m
+[0;32mI (210810) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (210810) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (210810) GAP: --RSSI: -55[0m
+[0;32mI (210810) GAP: Device found: ???[0m
+[0;32mI (210870) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (210870) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (210870) GAP: --RSSI: -56[0m
+[0;32mI (210870) GAP: Device found: ???[0m
+[0;32mI (210920) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (210920) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (210920) GAP: --RSSI: -56[0m
+[0;32mI (210920) GAP: Device found: ???[0m
+[0;32mI (212110) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (212110) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (212110) GAP: --RSSI: -55[0m
+[0;32mI (212120) GAP: Device found: ???[0m
+[0;32mI (212160) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (212160) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (212160) GAP: --RSSI: -57[0m
+[0;32mI (212170) GAP: Device found: ???[0m
+[0;32mI (212290) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (212290) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (212290) GAP: --RSSI: -54[0m
+[0;32mI (212300) GAP: Device found: ???[0m
+[0;32mI (213320) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (213320) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (213320) GAP: --RSSI: -59[0m
+[0;32mI (213320) GAP: Device found: ???[0m
+[0;32mI (213370) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (213370) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (213370) GAP: --RSSI: -54[0m
+[0;32mI (213370) GAP: Device found: ???[0m
+[0;32mI (214500) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (214500) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (214500) GAP: --RSSI: -56[0m
+[0;32mI (214500) GAP: Device found: ???[0m
+[0;32mI (214770) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (214770) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (214770) GAP: --RSSI: -57[0m
+[0;32mI (214770) GAP: Device found: ???[0m
+[0;32mI (215310) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (215310) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (215310) GAP: --RSSI: -57[0m
+[0;32mI (215310) GAP: Device found: ???[0m
+[0;32mI (215660) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (215660) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (215660) GAP: --RSSI: -55[0m
+[0;32mI (215660) GAP: Device found: ???[0m
+[0;32mI (215870) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (215870) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (215870) GAP: --RSSI: -57[0m
+[0;32mI (215870) GAP: Device found: ???[0m
+[0;32mI (215900) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (215900) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (215900) GAP: --RSSI: -57[0m
+[0;32mI (215900) GAP: Device found: ???[0m
+[0;32mI (217170) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (217170) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (217170) GAP: --RSSI: -64[0m
+[0;32mI (217180) GAP: Device found: ???[0m
+[0;32mI (217440) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (217440) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (217440) GAP: --RSSI: -63[0m
+[0;32mI (217450) GAP: Device found: ???[0m
+[0;32mI (217680) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (217690) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (217690) GAP: --RSSI: -63[0m
+[0;32mI (217690) GAP: Device found: ???[0m
+[0;32mI (217760) GAP: Device found: e4:93:6a:31:13:b4[0m
+[0;32mI (217760) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (217760) GAP: --RSSI: -86[0m
+[0;32mI (217770) GAP: Device found: ???[0m
+[0;32mI (218130) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (218130) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (218130) GAP: --RSSI: -68[0m
+[0;32mI (218130) GAP: Device found: ???[0m
+[0;32mI (218410) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (218410) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (218410) GAP: --RSSI: -65[0m
+[0;32mI (218410) GAP: Device found: ???[0m
+[0;32mI (219570) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (219570) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (219570) GAP: --RSSI: -64[0m
+[0;32mI (219570) GAP: Device found: ???[0m
+[0;32mI (219640) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (219640) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (219640) GAP: --RSSI: -64[0m
+[0;32mI (219640) GAP: Device found: ???[0m
+[0;32mI (219790) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (219790) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (219790) GAP: --RSSI: -63[0m
+[0;32mI (219790) GAP: Device found: ???[0m
+[0;32mI (220840) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (220840) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (220840) GAP: --RSSI: -67[0m
+[0;32mI (220840) GAP: Device found: ???[0m
+[0;32mI (220890) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (220890) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (220890) GAP: --RSSI: -67[0m
+[0;32mI (220890) GAP: Device found: ???[0m
+[0;32mI (222080) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (222080) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (222080) GAP: --RSSI: -62[0m
+[0;32mI (222080) GAP: Device found: ???[0m
+[0;32mI (222640) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (222640) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (222640) GAP: --RSSI: -59[0m
+[0;32mI (222650) GAP: Device found: ???[0m
+[0;32mI (223230) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (223230) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (223230) GAP: --RSSI: -64[0m
+[0;32mI (223240) GAP: Device found: ???[0m
+[0;32mI (223300) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (223300) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (223300) GAP: --RSSI: -62[0m
+[0;32mI (223310) GAP: Device found: ???[0m
+[0;32mI (223340) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (223350) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (223350) GAP: --RSSI: -64[0m
+[0;32mI (223350) GAP: Device found: ???[0m
+[0;32mI (224560) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (224560) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (224560) GAP: --RSSI: -61[0m
+[0;32mI (224560) GAP: Device found: ???[0m
+[0;32mI (224830) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (224830) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (224830) GAP: --RSSI: -64[0m
+[0;32mI (224830) GAP: Device found: ???[0m
+[0;32mI (225350) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (225350) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (225350) GAP: --RSSI: -64[0m
+[0;32mI (225350) GAP: Device found: ???[0m
+[0;32mI (225540) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (225540) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (225540) GAP: --RSSI: -66[0m
+[0;32mI (225540) GAP: Device found: ???[0m
+[0;32mI (225690) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (225690) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (225690) GAP: --RSSI: -62[0m
+[0;32mI (225690) GAP: Device found: ???[0m
+[0;32mI (225900) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (225900) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (225900) GAP: --RSSI: -67[0m
+[0;32mI (225900) GAP: Device found: ???[0m
+[0;32mI (225940) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (225940) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (225940) GAP: --RSSI: -65[0m
+[0;32mI (225940) GAP: Device found: ???[0m
+[0;32mI (227290) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (227290) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (227290) GAP: --RSSI: -69[0m
+[0;32mI (227290) GAP: Device found: ???[0m
+[0;32mI (227390) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (227390) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (227390) GAP: --RSSI: -65[0m
+[0;32mI (227400) GAP: Device found: ???[0m
+[0;32mI (228480) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (228480) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (228480) GAP: --RSSI: -68[0m
+[0;32mI (228490) GAP: Device found: ???[0m
+[0;32mI (228530) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (228530) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (228530) GAP: --RSSI: -70[0m
+[0;32mI (228540) GAP: Device found: ???[0m
+[0;32mI (229700) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (229700) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (229700) GAP: --RSSI: -66[0m
+[0;32mI (229700) GAP: Device found: ???[0m
+[0;32mI (230880) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (230880) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (230880) GAP: --RSSI: -58[0m
+[0;32mI (230880) GAP: Device found: ???[0m
+[0;32mI (230920) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (230920) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (230920) GAP: --RSSI: -58[0m
+[0;32mI (230920) GAP: Device found: ???[0m
+[0;32mI (230970) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (230970) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (230970) GAP: --RSSI: -57[0m
+[0;32mI (230970) GAP: Device found: ???[0m
+[0;32mI (231010) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (231010) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (231010) GAP: --RSSI: -59[0m
+[0;32mI (231010) GAP: Device found: ???[0m
+[0;32mI (231560) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (231560) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (231560) GAP: --RSSI: -59[0m
+[0;32mI (231560) GAP: Device found: ???[0m
+[0;32mI (231740) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (231740) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (231740) GAP: --RSSI: -60[0m
+[0;32mI (231740) GAP: Device found: ???[0m
+[0;32mI (231970) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (231970) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (231970) GAP: --RSSI: -59[0m
+[0;32mI (231970) GAP: Device found: ???[0m
+[0;32mI (232090) GAP: Device found: 54:0e:58:80:1f:ce[0m
+[0;32mI (232090) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (232090) GAP: --RSSI: -92[0m
+[0;32mI (232100) GAP: Device found: ???[0m
+[0;32mI (232180) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (232180) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (232180) GAP: --RSSI: -59[0m
+[0;32mI (232180) GAP: Device found: ???[0m
+[0;32mI (232230) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (232230) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (232230) GAP: --RSSI: -60[0m
+[0;32mI (232230) GAP: Device found: ???[0m
+[0;32mI (232470) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (232470) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (232470) GAP: --RSSI: -64[0m
+[0;32mI (232470) GAP: Device found: ???[0m
+[0;32mI (233030) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (233030) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (233030) GAP: --RSSI: -61[0m
+[0;32mI (233040) GAP: Device found: ???[0m
+[0;32mI (233510) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (233510) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (233510) GAP: --RSSI: -63[0m
+[0;32mI (233520) GAP: Device found: ???[0m
+[0;32mI (233550) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (233550) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (233550) GAP: --RSSI: -63[0m
+[0;32mI (233560) GAP: Device found: ???[0m
+[0;32mI (233790) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (233800) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (233800) GAP: --RSSI: -65[0m
+[0;32mI (233800) GAP: Device found: ???[0m
+[0;32mI (233990) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (233990) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (233990) GAP: --RSSI: -63[0m
+[0;32mI (233990) GAP: Device found: ???[0m
+[0;32mI (234290) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (234290) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (234290) GAP: --RSSI: -63[0m
+[0;32mI (234290) GAP: Device found: ???[0m
+[0;32mI (234390) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (234400) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (234400) GAP: --RSSI: -65[0m
+[0;32mI (234400) GAP: Device found: ???[0m
+[0;32mI (234530) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (234530) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (234530) GAP: --RSSI: -62[0m
+[0;32mI (234530) GAP: Device found: ???[0m
+[0;32mI (234850) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (234850) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (234850) GAP: --RSSI: -64[0m
+[0;32mI (234850) GAP: Device found: ???[0m
+[0;32mI (234900) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (234900) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (234900) GAP: --RSSI: -61[0m
+[0;32mI (234900) GAP: Device found: ???[0m
+[0;32mI (235420) GAP: Device found: c0:e4:34:e0:95:08[0m
+[0;32mI (235420) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (235420) GAP: --RSSI: -92[0m
+[0;32mI (235420) GAP: Device found: ???[0m
+[0;32mI (235510) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (235510) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (235510) GAP: --RSSI: -64[0m
+[0;32mI (235510) GAP: Device found: ???[0m
+[0;32mI (235560) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (235560) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (235560) GAP: --RSSI: -60[0m
+[0;32mI (235560) GAP: Device found: ???[0m
+[0;32mI (237300) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (237300) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (237300) GAP: --RSSI: -64[0m
+[0;32mI (237310) GAP: Device found: ???[0m
+[0;32mI (237440) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (237450) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (237450) GAP: --RSSI: -60[0m
+[0;32mI (237450) GAP: Device found: ???[0m
+[0;32mI (237940) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (237940) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (237940) GAP: --RSSI: -63[0m
+[0;32mI (237940) GAP: Device found: ???[0m
+[0;32mI (238020) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (238020) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (238020) GAP: --RSSI: -61[0m
+[0;32mI (238020) GAP: Device found: ???[0m
+[0;32mI (238320) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (238320) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (238320) GAP: --RSSI: -64[0m
+[0;32mI (238320) GAP: Device found: ???[0m
+[0;32mI (238440) GAP: Device found: e4:93:6a:31:13:b4[0m
+[0;32mI (238440) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (238440) GAP: --RSSI: -84[0m
+[0;32mI (238450) GAP: Device found: ???[0m
+[0;32mI (238560) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (238560) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (238560) GAP: --RSSI: -65[0m
+[0;32mI (238560) GAP: Device found: ???[0m
+[0;32mI (238610) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (238610) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (238610) GAP: --RSSI: -61[0m
+[0;32mI (238610) GAP: Device found: ???[0m
+[0;32mI (238660) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (238660) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (238660) GAP: --RSSI: -65[0m
+[0;32mI (238660) GAP: Device found: ???[0m
+[0;32mI (239280) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (239280) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (239280) GAP: --RSSI: -61[0m
+[0;32mI (239280) GAP: Device found: ???[0m
+[0;32mI (239800) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (239800) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (239800) GAP: --RSSI: -61[0m
+[0;32mI (239800) GAP: Device found: ???[0m
+[0;32mI (239920) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (239920) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (239920) GAP: --RSSI: -63[0m
+[0;32mI (239920) GAP: Device found: ???[0m
+[0;32mI (239960) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (239960) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (239960) GAP: --RSSI: -60[0m
+[0;32mI (239960) GAP: Device found: ???[0m
+[0;32mI (241000) GAP: Device found: c0:e4:34:e0:95:08[0m
+[0;32mI (241000) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (241000) GAP: --RSSI: -91[0m
+[0;32mI (241000) GAP: Device found: ???[0m
+[0;32mI (241010) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (241010) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (241020) GAP: --RSSI: -61[0m
+[0;32mI (241020) GAP: Device found: ???[0m
+[0;32mI (241120) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (241120) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (241120) GAP: --RSSI: -64[0m
+[0;32mI (241130) GAP: Device found: ???[0m
+[0;32mI (241210) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (241210) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (241210) GAP: --RSSI: -61[0m
+[0;32mI (241220) GAP: Device found: ???[0m
+[0;32mI (241250) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (241250) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (241250) GAP: --RSSI: -63[0m
+[0;32mI (241260) GAP: Device found: ???[0m
+[0;32mI (241650) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (241660) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (241660) GAP: --RSSI: -64[0m
+[0;32mI (241660) GAP: Device found: ???[0m
+[0;32mI (241880) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (241880) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (241880) GAP: --RSSI: -62[0m
+[0;32mI (241880) GAP: Device found: ???[0m
+[0;32mI (242510) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (242510) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (242510) GAP: --RSSI: -61[0m
+[0;32mI (242510) GAP: Device found: ???[0m
+[0;32mI (242560) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (242560) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (242560) GAP: --RSSI: -63[0m
+[0;32mI (242560) GAP: Device found: ???[0m
+[0;32mI (243130) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (243130) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (243130) GAP: --RSSI: -63[0m
+[0;32mI (243130) GAP: Device found: ???[0m
+[0;32mI (243310) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (243310) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (243310) GAP: --RSSI: -62[0m
+[0;32mI (243310) GAP: Device found: ???[0m
+[0;32mI (243580) GAP: Device found: e4:93:6a:31:13:b4[0m
+[0;32mI (243580) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (243580) GAP: --RSSI: -81[0m
+[0;32mI (243580) GAP: Device found: ???[0m
+[0;32mI (243680) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (243680) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (243680) GAP: --RSSI: -63[0m
+[0;32mI (243680) GAP: Device found: ???[0m
+[0;32mI (244790) GAP: Device found: e4:93:6a:31:13:b4[0m
+[0;32mI (244790) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (244790) GAP: --RSSI: -82[0m
+[0;32mI (244790) GAP: Device found: ???[0m
+[0;32mI (245000) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (245000) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (245000) GAP: --RSSI: -60[0m
+[0;32mI (245000) GAP: Device found: ???[0m
+[0;32mI (245190) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (245190) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (245190) GAP: --RSSI: -62[0m
+[0;32mI (245200) GAP: Device found: ???[0m
+[0;32mI (245450) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (245450) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (245450) GAP: --RSSI: -60[0m
+[0;32mI (245460) GAP: Device found: ???[0m
+[0;32mI (245680) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (245680) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (245680) GAP: --RSSI: -65[0m
+[0;32mI (245690) GAP: Device found: ???[0m
+[0;32mI (245990) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (246000) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (246000) GAP: --RSSI: -62[0m
+[0;32mI (246000) GAP: Device found: ???[0m
+[0;32mI (246050) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (246050) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (246050) GAP: --RSSI: -63[0m
+[0;32mI (246050) GAP: Device found: ???[0m
+[0;32mI (246130) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (246130) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (246130) GAP: --RSSI: -60[0m
+[0;32mI (246130) GAP: Device found: ???[0m
+[0;32mI (246300) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (246300) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (246300) GAP: --RSSI: -63[0m
+[0;32mI (246300) GAP: Device found: ???[0m
+[0;32mI (246840) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (246840) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (246840) GAP: --RSSI: -64[0m
+[0;32mI (246840) GAP: Device found: ???[0m
+[0;32mI (246940) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (246940) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (246940) GAP: --RSSI: -62[0m
+[0;32mI (246940) GAP: Device found: ???[0m
+[0;32mI (247150) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (247150) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (247150) GAP: --RSSI: -61[0m
+[0;32mI (247150) GAP: Device found: ???[0m
+[0;32mI (247540) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (247540) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (247540) GAP: --RSSI: -63[0m
+[0;32mI (247540) GAP: Device found: ???[0m
+[0;32mI (247580) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (247580) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (247580) GAP: --RSSI: -61[0m
+[0;32mI (247580) GAP: Device found: ???[0m
+[0;32mI (249780) GAP: Device found: e4:93:6a:31:13:b4[0m
+[0;32mI (249780) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (249780) GAP: --RSSI: -82[0m
+[0;32mI (249780) GAP: Device found: ???[0m
+[0;32mI (251310) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (251310) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (251310) GAP: --RSSI: -61[0m
+[0;32mI (251320) GAP: Device found: ???[0m
+[0;32mI (251450) GAP: Device found: c0:e4:34:e0:95:08[0m
+[0;32mI (251460) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (251460) GAP: --RSSI: -91[0m
+[0;32mI (251460) GAP: Device found: ???[0m
+[0;32mI (251460) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (251470) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (251470) GAP: --RSSI: -64[0m
+[0;32mI (251480) GAP: Device found: ???[0m
+[0;32mI (251670) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (251680) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (251680) GAP: --RSSI: -61[0m
+[0;32mI (251680) GAP: Device found: ???[0m
+[0;32mI (252550) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (252550) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (252550) GAP: --RSSI: -62[0m
+[0;32mI (252550) GAP: Device found: ???[0m
+[0;32mI (252600) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (252600) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (252600) GAP: --RSSI: -60[0m
+[0;32mI (252600) GAP: Device found: ???[0m
+[0;32mI (253180) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (253180) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (253180) GAP: --RSSI: -61[0m
+[0;32mI (253180) GAP: Device found: ???[0m
+[0;32mI (253600) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (253600) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (253600) GAP: --RSSI: -62[0m
+[0;32mI (253600) GAP: Device found: ???[0m
+[0;32mI (253760) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (253760) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (253760) GAP: --RSSI: -61[0m
+[0;32mI (253760) GAP: Device found: ???[0m
+[0;32mI (253810) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (253810) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (253810) GAP: --RSSI: -61[0m
+[0;32mI (253810) GAP: Device found: ???[0m
+[0;32mI (254380) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (254380) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (254380) GAP: --RSSI: -61[0m
+[0;32mI (254380) GAP: Device found: ???[0m
+[0;32mI (255050) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (255050) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (255050) GAP: --RSSI: -63[0m
+[0;32mI (255050) GAP: Device found: ???[0m
+[0;32mI (256390) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (256390) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (256390) GAP: --RSSI: -60[0m
+[0;32mI (256400) GAP: Device found: ???[0m
+[0;32mI (256850) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (256850) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (256850) GAP: --RSSI: -65[0m
+[0;32mI (256860) GAP: Device found: ???[0m
+[0;32mI (257160) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (257160) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (257160) GAP: --RSSI: -61[0m
+[0;32mI (257170) GAP: Device found: ???[0m
+[0;32mI (258660) GAP: Device found: e4:93:6a:31:13:b4[0m
+[0;32mI (258660) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (258660) GAP: --RSSI: -81[0m
+[0;32mI (258670) GAP: Device found: ???[0m
+[0;32mI (259120) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (259120) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (259120) GAP: --RSSI: -61[0m
+[0;32mI (259120) GAP: Device found: ???[0m
+[0;32mI (259160) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (259160) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (259160) GAP: --RSSI: -61[0m
+[0;32mI (259160) GAP: Device found: ???[0m
+[0;32mI (259420) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (259420) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (259420) GAP: --RSSI: -61[0m
+[0;32mI (259420) GAP: Device found: ???[0m
+[0;32mI (260330) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (260330) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (260330) GAP: --RSSI: -61[0m
+[0;32mI (260330) GAP: Device found: ???[0m
+[0;32mI (260380) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (260380) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (260380) GAP: --RSSI: -63[0m
+[0;32mI (260380) GAP: Device found: ???[0m
+[0;32mI (261570) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (261570) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (261570) GAP: --RSSI: -62[0m
+[0;32mI (261570) GAP: Device found: ???[0m
+[0;32mI (261880) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (261880) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (261880) GAP: --RSSI: -62[0m
+[0;32mI (261880) GAP: Device found: ???[0m
+[0;32mI (262210) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (262210) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (262210) GAP: --RSSI: -65[0m
+[0;32mI (262210) GAP: Device found: ???[0m
+[0;32mI (267620) GAP: Device discovery stopped.[0m
+[0;32mI (267620) GAP: Discovery started.[0m
+[0;32mI (268140) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (268140) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (268140) GAP: --RSSI: -60[0m
+[0;32mI (268140) GAP: Device found: ???[0m
+[0;32mI (268230) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (268230) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (268230) GAP: --RSSI: -60[0m
+[0;32mI (268230) GAP: Device found: ???[0m
+[0;32mI (268640) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (268640) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (268640) GAP: --RSSI: -61[0m
+[0;32mI (268640) GAP: Device found: ???[0m
+[0;32mI (268950) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (268950) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (268950) GAP: --RSSI: -60[0m
+[0;32mI (268950) GAP: Device found: ???[0m
+[0;32mI (269250) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (269250) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (269250) GAP: --RSSI: -64[0m
+[0;32mI (269250) GAP: Device found: ???[0m
+[0;32mI (269410) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (269410) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (269410) GAP: --RSSI: -60[0m
+[0;32mI (269410) GAP: Device found: ???[0m
+[0;32mI (270610) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (270610) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (270610) GAP: --RSSI: -61[0m
+[0;32mI (270610) GAP: Device found: ???[0m
+[0;32mI (271340) GAP: Device found: c0:e4:34:e0:95:08[0m
+[0;32mI (271340) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (271340) GAP: --RSSI: -91[0m
+[0;32mI (271340) GAP: Device found: ???[0m
+[0;32mI (271820) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (271820) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (271820) GAP: --RSSI: -60[0m
+[0;32mI (271820) GAP: Device found: ???[0m
+[0;32mI (273080) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (273080) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (273080) GAP: --RSSI: -62[0m
+[0;32mI (273090) GAP: Device found: ???[0m
+[0;32mI (273470) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (273470) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (273470) GAP: --RSSI: -61[0m
+[0;32mI (273480) GAP: Device found: ???[0m
+[0;32mI (273880) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (273880) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (273880) GAP: --RSSI: -61[0m
+[0;32mI (273890) GAP: Device found: ???[0m
+[0;32mI (274030) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (274040) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (274040) GAP: --RSSI: -62[0m
+[0;32mI (274040) GAP: Device found: ???[0m
+[0;32mI (274130) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (274130) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (274130) GAP: --RSSI: -61[0m
+[0;32mI (274130) GAP: Device found: ???[0m
+[0;32mI (274290) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (274290) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (274290) GAP: --RSSI: -65[0m
+[0;32mI (274290) GAP: Device found: ???[0m
+[0;32mI (274340) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (274340) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (274340) GAP: --RSSI: -59[0m
+[0;32mI (274340) GAP: Device found: ???[0m
+[0;32mI (274500) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (274500) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (274500) GAP: --RSSI: -63[0m
+[0;32mI (274500) GAP: Device found: ???[0m
+[0;32mI (275050) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (275050) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (275050) GAP: --RSSI: -60[0m
+[0;32mI (275050) GAP: Device found: ???[0m
+[0;32mI (275490) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (275490) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (275490) GAP: --RSSI: -61[0m
+[0;32mI (275490) GAP: Device found: ???[0m
+[0;32mI (276890) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (276890) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (276890) GAP: --RSSI: -59[0m
+[0;32mI (276890) GAP: Device found: ???[0m
+[0;32mI (277460) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (277460) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (277460) GAP: --RSSI: -60[0m
+[0;32mI (277460) GAP: Device found: ???[0m
+[0;32mI (277940) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (277940) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (277940) GAP: --RSSI: -65[0m
+[0;32mI (277940) GAP: Device found: ???[0m
+[0;32mI (278240) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (278240) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (278240) GAP: --RSSI: -60[0m
+[0;32mI (278240) GAP: Device found: ???[0m
+[0;32mI (278290) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (278300) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (278300) GAP: --RSSI: -60[0m
+[0;32mI (278300) GAP: Device found: ???[0m
+[0;32mI (279540) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (279540) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (279540) GAP: --RSSI: -61[0m
+[0;32mI (279540) GAP: Device found: ???[0m
+[0;32mI (280030) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (280030) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (280030) GAP: --RSSI: -61[0m
+[0;32mI (280030) GAP: Device found: ???[0m
+[0;32mI (280590) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (280590) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (280590) GAP: --RSSI: -61[0m
+[0;32mI (280590) GAP: Device found: ???[0m
+[0;32mI (280800) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (280800) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (280800) GAP: --RSSI: -61[0m
+[0;32mI (280800) GAP: Device found: ???[0m
+[0;32mI (280850) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (280850) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (280850) GAP: --RSSI: -61[0m
+[0;32mI (280850) GAP: Device found: ???[0m
+[0;32mI (281260) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (281260) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (281260) GAP: --RSSI: -61[0m
+[0;32mI (281260) GAP: Device found: ???[0m
+[0;32mI (281850) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (281850) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (281850) GAP: --RSSI: -60[0m
+[0;32mI (281850) GAP: Device found: ???[0m
+[0;32mI (281910) GAP: Device found: c0:e4:34:e0:95:08[0m
+[0;32mI (281910) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (281910) GAP: --RSSI: -90[0m
+[0;32mI (281910) GAP: Device found: ???[0m
+[0;32mI (281980) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (281980) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (281980) GAP: --RSSI: -60[0m
+[0;32mI (281980) GAP: Device found: ???[0m
+[0;32mI (282030) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (282030) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (282030) GAP: --RSSI: -59[0m
+[0;32mI (282030) GAP: Device found: ???[0m
+[0;32mI (283200) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (283200) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (283200) GAP: --RSSI: -59[0m
+[0;32mI (283210) GAP: Device found: ???[0m
+[0;32mI (284520) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (284520) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (284520) GAP: --RSSI: -65[0m
+[0;32mI (284530) GAP: Device found: ???[0m
+[0;32mI (285760) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (285760) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (285760) GAP: --RSSI: -66[0m
+[0;32mI (285760) GAP: Device found: ???[0m
+[0;32mI (285910) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (285910) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (285910) GAP: --RSSI: -65[0m
+[0;32mI (285910) GAP: Device found: ???[0m
+[0;32mI (286320) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (286320) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (286320) GAP: --RSSI: -70[0m
+[0;32mI (286320) GAP: Device found: ???[0m
+[0;32mI (286950) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (286950) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (286950) GAP: --RSSI: -68[0m
+[0;32mI (286950) GAP: Device found: ???[0m
+[0;32mI (287000) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (287000) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (287000) GAP: --RSSI: -68[0m
+[0;32mI (287000) GAP: Device found: ???[0m
+[0;32mI (287190) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (287190) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (287190) GAP: --RSSI: -66[0m
+[0;32mI (287190) GAP: Device found: ???[0m
+[0;32mI (288270) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (288270) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (288270) GAP: --RSSI: -66[0m
+[0;32mI (288270) GAP: Device found: ???[0m
+[0;32mI (288320) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (288320) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (288320) GAP: --RSSI: -66[0m
+[0;32mI (288320) GAP: Device found: ???[0m
+[0;32mI (288420) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (288420) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (288420) GAP: --RSSI: -66[0m
+[0;32mI (288420) GAP: Device found: ???[0m
+[0;32mI (289530) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (289530) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (289530) GAP: --RSSI: -66[0m
+[0;32mI (289540) GAP: Device found: ???[0m
+[0;32mI (289580) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (289580) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (289580) GAP: --RSSI: -68[0m
+[0;32mI (289590) GAP: Device found: ???[0m
+[0;32mI (289800) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (289800) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (289800) GAP: --RSSI: -65[0m
+[0;32mI (289810) GAP: Device found: ???[0m
+[0;32mI (289910) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (289920) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (289920) GAP: --RSSI: -64[0m
+[0;32mI (289920) GAP: Device found: ???[0m
+[0;32mI (290370) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (290370) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (290370) GAP: --RSSI: -65[0m
+[0;32mI (290370) GAP: Device found: ???[0m
+[0;32mI (290720) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (290720) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (290720) GAP: --RSSI: -64[0m
+[0;32mI (290720) GAP: Device found: ???[0m
+[0;32mI (290760) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (290760) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (290760) GAP: --RSSI: -65[0m
+[0;32mI (290760) GAP: Device found: ???[0m
+[0;32mI (290800) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (290800) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (290800) GAP: --RSSI: -67[0m
+[0;32mI (290800) GAP: Device found: ???[0m
+[0;32mI (291950) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (291950) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (291950) GAP: --RSSI: -63[0m
+[0;32mI (291950) GAP: Device found: ???[0m
+[0;32mI (292200) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (292200) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (292200) GAP: --RSSI: -65[0m
+[0;32mI (292200) GAP: Device found: ???[0m
+[0;32mI (292680) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (292680) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (292680) GAP: --RSSI: -64[0m
+[0;32mI (292680) GAP: Device found: ???[0m
+[0;32mI (292820) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (292820) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (292820) GAP: --RSSI: -64[0m
+[0;32mI (292820) GAP: Device found: ???[0m
+[0;32mI (293210) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (293210) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (293210) GAP: --RSSI: -67[0m
+[0;32mI (293210) GAP: Device found: ???[0m
+[0;32mI (293250) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (293250) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (293250) GAP: --RSSI: -64[0m
+[0;32mI (293260) GAP: Device found: ???[0m
+[0;32mI (293660) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (293660) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (293660) GAP: --RSSI: -67[0m
+[0;32mI (293670) GAP: Device found: ???[0m
+[0;32mI (294090) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (294090) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (294090) GAP: --RSSI: -65[0m
+[0;32mI (294100) GAP: Device found: ???[0m
+[0;32mI (294560) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (294570) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (294570) GAP: --RSSI: -63[0m
+[0;32mI (294570) GAP: Device found: ???[0m
+[0;32mI (297150) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (297150) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (297150) GAP: --RSSI: -72[0m
+[0;32mI (297150) GAP: Device found: ???[0m
+[0;32mI (297360) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (297360) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (297360) GAP: --RSSI: -70[0m
+[0;32mI (297360) GAP: Device found: ???[0m
+[0;32mI (297870) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (297870) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (297870) GAP: --RSSI: -66[0m
+[0;32mI (297870) GAP: Device found: ???[0m
+[0;32mI (298230) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (298230) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (298230) GAP: --RSSI: -71[0m
+[0;32mI (298230) GAP: Device found: ???[0m
+[0;32mI (298420) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (298420) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (298420) GAP: --RSSI: -61[0m
+[0;32mI (298420) GAP: Device found: ???[0m
+[0;32mI (298460) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (298460) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (298460) GAP: --RSSI: -62[0m
+[0;32mI (298460) GAP: Device found: ???[0m
+[0;32mI (298980) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (298980) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (298980) GAP: --RSSI: -68[0m
+[0;32mI (298980) GAP: Device found: ???[0m
+[0;32mI (299220) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (299220) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (299220) GAP: --RSSI: -64[0m
+[0;32mI (299230) GAP: Device found: ???[0m
+[0;32mI (299540) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (299540) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (299540) GAP: --RSSI: -69[0m
+[0;32mI (299550) GAP: Device found: ???[0m
+[0;32mI (299780) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (299780) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (299780) GAP: --RSSI: -64[0m
+[0;32mI (299790) GAP: Device found: ???[0m
+[0;32mI (299820) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (299830) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (299830) GAP: --RSSI: -71[0m
+[0;32mI (299830) GAP: Device found: ???[0m
+[0;32mI (300370) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (300370) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (300370) GAP: --RSSI: -65[0m
+[0;32mI (300370) GAP: Device found: ???[0m
+[0;32mI (302320) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (302320) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (302320) GAP: --RSSI: -74[0m
+[0;32mI (302320) GAP: Device found: ???[0m
+[0;32mI (302810) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (302810) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (302810) GAP: --RSSI: -67[0m
+[0;32mI (302810) GAP: Device found: ???[0m
+[0;32mI (303280) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (303280) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (303280) GAP: --RSSI: -71[0m
+[0;32mI (303280) GAP: Device found: ???[0m
+[0;32mI (303580) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (303580) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (303580) GAP: --RSSI: -62[0m
+[0;32mI (303580) GAP: Device found: ???[0m
+[0;32mI (303900) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (303900) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (303900) GAP: --RSSI: -69[0m
+[0;32mI (303900) GAP: Device found: ???[0m
+[0;32mI (304020) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (304020) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (304020) GAP: --RSSI: -61[0m
+[0;32mI (304020) GAP: Device found: ???[0m
+[0;32mI (304260) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (304260) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (304260) GAP: --RSSI: -68[0m
+[0;32mI (304260) GAP: Device found: ???[0m
+[0;32mI (304530) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (304530) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (304530) GAP: --RSSI: -65[0m
+[0;32mI (304540) GAP: Device found: ???[0m
+[0;32mI (304720) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (304720) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (304720) GAP: --RSSI: -67[0m
+[0;32mI (304730) GAP: Device found: ???[0m
+[0;32mI (305960) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (305960) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (305960) GAP: --RSSI: -63[0m
+[0;32mI (305970) GAP: Device found: ???[0m
+[0;32mI (306470) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (306480) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (306480) GAP: --RSSI: -68[0m
+[0;32mI (306480) GAP: Device found: ???[0m
+[0;32mI (306710) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (306710) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (306710) GAP: --RSSI: -60[0m
+[0;32mI (306710) GAP: Device found: ???[0m
+[0;32mI (306960) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (306960) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (306960) GAP: --RSSI: -60[0m
+[0;32mI (306960) GAP: Device found: ???[0m
+[0;32mI (307220) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (307220) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (307220) GAP: --RSSI: -58[0m
+[0;32mI (307220) GAP: Device found: ???[0m
+[0;32mI (307260) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (307260) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (307260) GAP: --RSSI: -61[0m
+[0;32mI (307260) GAP: Device found: ???[0m
+[0;32mI (308430) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (308430) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (308430) GAP: --RSSI: -67[0m
+[0;32mI (308430) GAP: Device found: ???[0m
+[0;32mI (308570) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (308570) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (308570) GAP: --RSSI: -66[0m
+[0;32mI (308570) GAP: Device found: ???[0m
+[0;32mI (308640) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (308640) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (308640) GAP: --RSSI: -66[0m
+[0;32mI (308640) GAP: Device found: ???[0m
+[0;32mI (309010) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (309010) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (309010) GAP: --RSSI: -65[0m
+[0;32mI (309010) GAP: Device found: ???[0m
+[0;32mI (309660) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (309660) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (309660) GAP: --RSSI: -67[0m
+[0;32mI (309660) GAP: Device found: ???[0m
+[0;32mI (311030) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (311030) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (311030) GAP: --RSSI: -71[0m
+[0;32mI (311040) GAP: Device found: ???[0m
+[0;32mI (312300) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (312300) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (312300) GAP: --RSSI: -58[0m
+[0;32mI (312300) GAP: Device found: ???[0m
+[0;32mI (312650) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (312650) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (312650) GAP: --RSSI: -60[0m
+[0;32mI (312650) GAP: Device found: ???[0m
+[0;32mI (313130) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (313130) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (313130) GAP: --RSSI: -57[0m
+[0;32mI (313130) GAP: Device found: ???[0m
+[0;32mI (313240) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (313240) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (313240) GAP: --RSSI: -61[0m
+[0;32mI (313240) GAP: Device found: ???[0m
+[0;32mI (313420) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (313420) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (313420) GAP: --RSSI: -63[0m
+[0;32mI (313420) GAP: Device found: ???[0m
+[0;32mI (313590) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (313590) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (313590) GAP: --RSSI: -62[0m
+[0;32mI (313590) GAP: Device found: ???[0m
+[0;32mI (313640) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (313640) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (313640) GAP: --RSSI: -59[0m
+[0;32mI (313640) GAP: Device found: ???[0m
+[0;32mI (313890) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (313890) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (313890) GAP: --RSSI: -64[0m
+[0;32mI (313890) GAP: Device found: ???[0m
+[0;32mI (314230) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (314230) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (314230) GAP: --RSSI: -62[0m
+[0;32mI (314230) GAP: Device found: ???[0m
+[0;32mI (314540) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (314540) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (314540) GAP: --RSSI: -65[0m
+[0;32mI (314540) GAP: Device found: ???[0m
+[0;32mI (314800) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (314800) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (314800) GAP: --RSSI: -61[0m
+[0;32mI (314800) GAP: Device found: ???[0m
+[0;32mI (314840) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (314840) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (314840) GAP: --RSSI: -62[0m
+[0;32mI (314840) GAP: Device found: ???[0m
+[0;32mI (314930) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (314930) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (314930) GAP: --RSSI: -60[0m
+[0;32mI (314940) GAP: Device found: ???[0m
+[0;32mI (315050) GAP: Device found: e4:93:6a:31:13:b4[0m
+[0;32mI (315050) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (315050) GAP: --RSSI: -94[0m
+[0;32mI (315060) GAP: Device found: ???[0m
+[0;32mI (315190) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (315190) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (315190) GAP: --RSSI: -63[0m
+[0;32mI (315200) GAP: Device found: ???[0m
+[0;32mI (315750) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (315760) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (315760) GAP: --RSSI: -66[0m
+[0;32mI (315760) GAP: Device found: ???[0m
+[0;32mI (316070) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (316070) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (316070) GAP: --RSSI: -62[0m
+[0;32mI (316070) GAP: Device found: ???[0m
+[0;32mI (316120) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (316120) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (316120) GAP: --RSSI: -60[0m
+[0;32mI (316120) GAP: Device found: ???[0m
+[0;32mI (317430) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (317430) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (317430) GAP: --RSSI: -63[0m
+[0;32mI (317430) GAP: Device found: ???[0m
+[0;32mI (318660) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (318660) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (318660) GAP: --RSSI: -62[0m
+[0;32mI (318660) GAP: Device found: ???[0m
+[0;32mI (318880) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (318880) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (318880) GAP: --RSSI: -62[0m
+[0;32mI (318880) GAP: Device found: ???[0m
+[0;32mI (318970) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (318970) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (318970) GAP: --RSSI: -65[0m
+[0;32mI (318970) GAP: Device found: ???[0m
+[0;32mI (319400) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (319400) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (319400) GAP: --RSSI: -61[0m
+[0;32mI (319400) GAP: Device found: ???[0m
+[0;32mI (319630) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (319630) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (319630) GAP: --RSSI: -63[0m
+[0;32mI (319630) GAP: Device found: ???[0m
+[0;32mI (319860) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (319860) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (319860) GAP: --RSSI: -60[0m
+[0;32mI (319870) GAP: Device found: ???[0m
+[0;32mI (320000) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (320000) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (320000) GAP: --RSSI: -63[0m
+[0;32mI (320000) GAP: Device found: ???[0m
+[0;32mI (320060) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (320060) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (320060) GAP: --RSSI: -57[0m
+[0;32mI (320060) GAP: Device found: ???[0m
+[0;32mI (320180) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (320180) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (320180) GAP: --RSSI: -62[0m
+[0;32mI (320180) GAP: Device found: ???[0m
+[0;32mI (320650) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (320650) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (320650) GAP: --RSSI: -59[0m
+[0;32mI (320650) GAP: Device found: ???[0m
+[0;32mI (321230) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (321230) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (321230) GAP: --RSSI: -61[0m
+[0;32mI (321230) GAP: Device found: ???[0m
+[0;32mI (321340) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (321340) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (321340) GAP: --RSSI: -63[0m
+[0;32mI (321340) GAP: Device found: ???[0m
+[0;32mI (321390) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (321390) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (321390) GAP: --RSSI: -60[0m
+[0;32mI (321390) GAP: Device found: ???[0m
+[0;32mI (321650) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (321650) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (321650) GAP: --RSSI: -62[0m
+[0;32mI (321650) GAP: Device found: ???[0m
+[0;32mI (321810) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (321810) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (321810) GAP: --RSSI: -60[0m
+[0;32mI (321810) GAP: Device found: ???[0m
+[0;32mI (322410) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (322410) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (322410) GAP: --RSSI: -57[0m
+[0;32mI (322410) GAP: Device found: ???[0m
+[0;32mI (322660) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (322660) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (322660) GAP: --RSSI: -62[0m
+[0;32mI (322660) GAP: Device found: ???[0m
+[0;32mI (322710) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (322710) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (322710) GAP: --RSSI: -59[0m
+[0;32mI (322720) GAP: Device found: ???[0m
+[0;32mI (322960) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (322960) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (322960) GAP: --RSSI: -62[0m
+[0;32mI (322970) GAP: Device found: ???[0m
+[0;32mI (323210) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (323210) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (323210) GAP: --RSSI: -58[0m
+[0;32mI (323220) GAP: Device found: ???[0m
+[0;32mI (323860) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (323860) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (323860) GAP: --RSSI: -59[0m
+[0;32mI (323860) GAP: Device found: ???[0m
+[0;32mI (324010) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (324010) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (324010) GAP: --RSSI: -60[0m
+[0;32mI (324010) GAP: Device found: ???[0m
+[0;32mI (324050) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (324050) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (324050) GAP: --RSSI: -56[0m
+[0;32mI (324050) GAP: Device found: ???[0m
+[0;32mI (324440) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (324440) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (324440) GAP: --RSSI: -62[0m
+[0;32mI (324440) GAP: Device found: ???[0m
+[0;32mI (324770) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (324770) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (324770) GAP: --RSSI: -59[0m
+[0;32mI (324770) GAP: Device found: ???[0m
+[0;32mI (325280) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (325280) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (325280) GAP: --RSSI: -59[0m
+[0;32mI (325280) GAP: Device found: ???[0m
+[0;32mI (325660) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (325660) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (325660) GAP: --RSSI: -65[0m
+[0;32mI (325660) GAP: Device found: ???[0m
+[0;32mI (326100) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (326100) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (326100) GAP: --RSSI: -59[0m
+[0;32mI (326100) GAP: Device found: ???[0m
+[0;32mI (326370) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (326370) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (326370) GAP: --RSSI: -64[0m
+[0;32mI (326370) GAP: Device found: ???[0m
+[0;32mI (326410) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (326410) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (326410) GAP: --RSSI: -60[0m
+[0;32mI (326410) GAP: Device found: ???[0m
+[0;32mI (327660) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (327660) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (327660) GAP: --RSSI: -61[0m
+[0;32mI (327670) GAP: Device found: ???[0m
+[0;32mI (328130) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (328140) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (328140) GAP: --RSSI: -60[0m
+[0;32mI (328140) GAP: Device found: ???[0m
+[0;32mI (328330) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (328330) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (328330) GAP: --RSSI: -60[0m
+[0;32mI (328330) GAP: Device found: ???[0m
+[0;32mI (328460) GAP: Device found: b0:46:92:e1:37:c0[0m
+[0;32mI (328460) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (328460) GAP: --RSSI: -56[0m
+[0;32mI (328460) GAP: Device found: ???[0m

@@ -1,0 +1,775 @@
+�(40) boot.esp32: �ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 27 2024 22:25:31[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1c56ch (116076) map[0m
+[0;32mI (145) esp_image: segment 1: paddr=0002c594 vaddr=3ffbdb60 size=03a84h ( 14980) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=68460h (427104) map[0m
+[0;32mI (297) esp_image: segment 3: paddr=00098488 vaddr=3ffc15e4 size=00f10h (  3856) load[0m
+[0;32mI (299) esp_image: segment 4: paddr=000993a0 vaddr=40080000 size=19ecch (106188) load[0m
+[0;32mI (357) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (357) boot: Disabling RNG early entropy source...[0m
+[0;32mI (369) cpu_start: Multicore app[0m
+[0;32mI (378) cpu_start: Pro cpu start user code[0m
+[0;32mI (378) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (378) cpu_start: Application information:[0m
+[0;32mI (381) cpu_start: Project name:     bt_discovery[0m
+[0;32mI (386) cpu_start: App version:      1[0m
+[0;32mI (391) cpu_start: Compile time:     May 27 2024 22:25:17[0m
+[0;32mI (397) cpu_start: ELF file SHA256:  f91df0db6...[0m
+[0;32mI (402) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (407) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (412) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (417) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (422) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (429) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (435) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (441) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (447) heap_init: At 3FFC6408 len 00019BF8 (102 KiB): DRAM[0m
+[0;32mI (453) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (460) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (466) heap_init: At 40099ECC len 00006134 (24 KiB): IRAM[0m
+[0;32mI (474) spi_flash: detected chip: generic[0m
+[0;32mI (477) spi_flash: flash io: dio[0m
+[0;33mW (481) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (495) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (500) main_task: Started on CPU0[0m
+[0;32mI (503) main_task: Calling app_main()[0m
+------------bbbbbbbbbbbbbbbbbbbb---------------[0;32mI (548) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (550) BTDM_INIT: Bluetooth MAC: 44:17:93:7c:43:b2[0m
+[0;32mI (556) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1192) uart: queue free spaces: 10[0m
+------------999999999999999999999----------------[0;32mI (1195) GAP: event: 10[0m
+------------aaaaaaaaaaaaaaaaaa----------------------------888888888888888888----------------[0;32mI (1203) main_task: Returned from app_main()[0m
+------------999999999999999999999----------------[0;32mI (1211) GAP: Discovery started.[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (4724) GAP: Device found: cc:47:40:01:35:46[0m
+[0;32mI (4727) GAP: Data sent successfully: 'cc:47:40:01:35:46'[0m
+[0;31mE (4733) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (5740) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (5740) GAP: --RSSI: -85[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (13738) GAP: Device found: cc:47:40:01:35:46[0m
+[0;32mI (13741) GAP: Data sent successfully: 'cc:47:40:01:35:46'[0m
+[0;31mE (13747) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (14755) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (14755) GAP: --RSSI: -84[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (30327) GAP: Device found: cc:47:40:01:35:46[0m
+[0;32mI (30330) GAP: Data sent successfully: 'cc:47:40:01:35:46'[0m
+[0;31mE (30336) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (31344) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (31344) GAP: --RSSI: -85[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (49537) GAP: Device found: cc:47:40:01:35:46[0m
+[0;32mI (49540) GAP: Data sent successfully: 'cc:47:40:01:35:46'[0m
+[0;31mE (49546) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (50554) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (50554) GAP: --RSSI: -86[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (55921) GAP: Device found: cc:47:40:01:35:46[0m
+[0;32mI (55924) GAP: Data sent successfully: 'cc:47:40:01:35:46'[0m
+[0;31mE (55930) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (56938) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (56938) GAP: --RSSI: -89[0m
+------------999999999999999999999----------------[0;32mI (62662) GAP: Device discovery stopped.[0m
+------------999999999999999999999----------------[0;32mI (62666) GAP: Discovery started.[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (84116) GAP: Device found: cc:47:40:01:35:46[0m
+[0;32mI (84119) GAP: Data sent successfully: 'cc:47:40:01:35:46'[0m
+[0;31mE (84125) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (85132) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (85132) GAP: --RSSI: -92[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (93041) GAP: Device found: cc:47:40:01:35:46[0m
+[0;32mI (93043) GAP: Data sent successfully: 'cc:47:40:01:35:46'[0m
+[0;31mE (93050) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (94057) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (94057) GAP: --RSSI: -85[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (108398) GAP: Device found: cc:47:40:01:35:46[0m
+[0;32mI (108401) GAP: Data sent successfully: 'cc:47:40:01:35:46'[0m
+[0;31mE (108407) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (109415) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (109415) GAP: --RSSI: -84[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (109415) GAP: Device found: cc:47:40:01:35:46[0m
+[0;32mI (109425) GAP: Data sent successfully: 'cc:47:40:01:35:46'[0m
+[0;31mE (109432) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (110440) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (110440) GAP: --RSSI: -89[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (112550) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (112553) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (112559) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (113567) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (114567) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (115567) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (116567) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (116567) GAP: --RSSI: -63[0m
+------------666666666666666666666----------------------------33333333333333333333333----------------------------444444444444444444444444----------------------------777777777777777777777777----------------[0;32mI (116575) GAP: Found a target device, address ec:30:b3:7f:d6:1e, name 20210234[0m
+[0;32mI (116590) GAP: ----------------------------------------------------------------ec:30:b3:7f:d6:1e[0m
+[0;32mI (121599) GAP: Cancel device discovery ...[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (121599) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (121606) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (121612) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (122620) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (122620) GAP: --RSSI: -67[0m
+[0;32mI (122620) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (122621) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (122634) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (122641) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (123649) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (124649) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (125649) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (126649) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (127649) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (128649) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (128649) GAP: --RSSI: -63[0m
+[0;32mI (128649) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (128650) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (128663) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (128670) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (129678) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (129678) GAP: --RSSI: -62[0m
+[0;32mI (129678) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (129679) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (129692) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (129699) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (130707) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (130707) GAP: --RSSI: -63[0m
+[0;32mI (130707) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (130708) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (130721) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (130728) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (131736) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (132736) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (133736) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (134736) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (135736) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (136736) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (137736) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (138736) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (138736) GAP: --RSSI: -56[0m
+[0;32mI (138736) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (138737) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (138750) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (138757) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (139765) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (139765) GAP: --RSSI: -52[0m
+[0;32mI (139765) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (139766) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (139779) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (139786) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (140794) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (140794) GAP: --RSSI: -51[0m
+[0;32mI (140794) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (140795) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (140808) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (140814) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (141822) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (142822) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (143822) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (144822) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (145822) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (146822) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (146822) GAP: --RSSI: -54[0m
+[0;32mI (146822) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (146823) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (146836) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (146843) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (147851) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (148851) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (149851) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (150851) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (151851) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (152851) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (153851) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (154851) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (155851) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (156851) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (157851) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (158851) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (159851) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (160851) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (161851) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (162851) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (163851) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (164851) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (165851) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (166851) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (167851) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (168851) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (169851) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (170851) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (171851) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (172851) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (173851) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (174851) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (174851) GAP: --RSSI: -54[0m
+[0;32mI (174851) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (174852) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (174865) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (174872) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (175880) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (175880) GAP: --RSSI: -54[0m
+[0;32mI (175880) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (175881) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (175895) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (175901) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (176909) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (176909) GAP: --RSSI: -54[0m
+[0;32mI (176909) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (176910) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (176923) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (176929) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (177937) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (178937) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (179937) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (180937) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (181937) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (182937) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (182937) GAP: --RSSI: -54[0m
+[0;32mI (182937) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (182938) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (182951) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (182958) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (183966) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (184966) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (185966) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (186966) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (187966) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (188966) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (188966) GAP: --RSSI: -69[0m
+[0;32mI (188966) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (188967) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (188980) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (188987) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (189995) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (190995) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (191995) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (192995) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (193995) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (193995) GAP: --RSSI: -64[0m
+[0;32mI (193995) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (193996) GAP: Device found: cc:47:40:01:35:46[0m
+[0;32mI (194009) GAP: Data sent successfully: 'cc:47:40:01:35:46'[0m
+[0;31mE (194016) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (195024) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (195024) GAP: --RSSI: -87[0m
+[0;32mI (195024) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (195025) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (195038) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (195044) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (196052) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (196052) GAP: --RSSI: -58[0m
+[0;32mI (196052) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (196053) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (196066) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (196073) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (197081) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (198081) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (199081) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (200081) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (201081) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (202081) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (202081) GAP: --RSSI: -54[0m
+[0;32mI (202081) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (202082) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (202095) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (202102) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (203110) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (204110) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (205110) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (206110) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (207110) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (208110) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (208110) GAP: --RSSI: -55[0m
+[0;32mI (208110) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (208111) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (208124) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (208130) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (209138) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (210138) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (211138) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (212138) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (213138) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (214138) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (214138) GAP: --RSSI: -56[0m
+[0;32mI (214138) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (214139) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (214152) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (214159) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (215167) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (215167) GAP: --RSSI: -55[0m
+[0;32mI (215167) GAP: Device found: ???[0m
+------------999999999999999999999----------------[0;32mI (215168) GAP: Device discovery stopped.[0m
+------------999999999999999999999----------------[0;32mI (215182) GAP: Discovery started.[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (216251) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (216254) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (216260) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (217268) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (217268) GAP: --RSSI: -77[0m
+[0;32mI (217268) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (218793) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (218795) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (218801) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (219809) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (220809) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (221809) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (221809) GAP: --RSSI: -77[0m
+[0;32mI (221809) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (221810) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (221823) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (221830) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (222838) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (222838) GAP: --RSSI: -77[0m
+[0;32mI (222838) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (222839) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (222852) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (222858) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (223866) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (223866) GAP: --RSSI: -78[0m
+[0;32mI (223866) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (223867) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (223880) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (223886) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (224894) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (225894) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (226894) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (227894) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (228894) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (229894) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (229894) GAP: --RSSI: -71[0m
+[0;32mI (229894) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (229895) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (229908) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (229915) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (230923) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (230923) GAP: --RSSI: -70[0m
+[0;32mI (230923) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (230924) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (230937) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (230944) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (231952) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (231952) GAP: --RSSI: -76[0m
+[0;32mI (231952) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (231953) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (231966) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (231973) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (232981) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (233981) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (234981) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (235981) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (236981) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (236981) GAP: --RSSI: -72[0m
+[0;32mI (236981) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (236982) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (236995) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (237002) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (238010) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (238010) GAP: --RSSI: -72[0m
+[0;32mI (238010) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (238011) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (238024) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (238031) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (239038) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (239038) GAP: --RSSI: -72[0m
+[0;32mI (239038) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (239039) GAP: Device found: cc:47:40:01:35:46[0m
+[0;32mI (239052) GAP: Data sent successfully: 'cc:47:40:01:35:46'[0m
+[0;31mE (239058) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (240066) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (241066) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (242066) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (243066) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (244066) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (245066) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (245066) GAP: --RSSI: -89[0m
+[0;32mI (245066) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (245067) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (245080) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (245087) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (246095) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (246095) GAP: --RSSI: -73[0m
+[0;32mI (246095) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (246096) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (246110) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (246116) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (247124) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (247124) GAP: --RSSI: -74[0m
+[0;32mI (247124) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (247125) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (247138) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (247145) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (248153) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (249153) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (250153) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (251153) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (252153) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (253153) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (254153) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (254153) GAP: --RSSI: -74[0m
+[0;32mI (254153) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (254154) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (254167) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (254173) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (255181) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (256181) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (257181) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (258181) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (259181) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (260181) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (260181) GAP: --RSSI: -75[0m
+[0;32mI (260181) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (260182) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (260195) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (260202) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (261210) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (262210) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (263210) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (264210) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (265210) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (265210) GAP: --RSSI: -71[0m
+[0;32mI (265210) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (265211) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (265224) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (265231) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (266239) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (266239) GAP: --RSSI: -74[0m
+[0;32mI (266239) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (266240) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (266253) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (266260) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (267268) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (267268) GAP: --RSSI: -73[0m
+[0;32mI (267268) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (267269) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (267282) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (267288) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (268296) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (269296) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (270296) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (271296) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (272296) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (273296) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (273296) GAP: --RSSI: -73[0m
+[0;32mI (273296) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (273297) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (273310) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (273317) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (274325) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (274325) GAP: --RSSI: -70[0m
+[0;32mI (274325) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (274326) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (274339) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (274346) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (275353) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (275353) GAP: --RSSI: -74[0m
+[0;32mI (275353) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (275354) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (275367) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (275374) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (276382) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (277383) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (278383) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (279383) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (280383) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (281383) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (281383) GAP: --RSSI: -74[0m
+[0;32mI (281383) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (281384) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (281398) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (281404) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (282412) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (283412) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (284412) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (285412) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (286412) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (287412) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (287412) GAP: --RSSI: -86[0m
+[0;32mI (287412) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (287413) GAP: Device found: cc:47:40:01:35:46[0m
+[0;32mI (287426) GAP: Data sent successfully: 'cc:47:40:01:35:46'[0m
+[0;31mE (287433) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (288441) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (289441) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (290441) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (291441) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (292441) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (293441) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (294441) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (295441) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (296441) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (297441) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (298441) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (298441) GAP: --RSSI: -85[0m
+[0;32mI (298441) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (298442) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (298456) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (298462) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (299470) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (299470) GAP: --RSSI: -84[0m
+[0;32mI (299470) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (299471) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (299484) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (299491) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (300499) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (300499) GAP: --RSSI: -81[0m
+[0;32mI (300499) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (300500) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (300513) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (300520) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (301528) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (302528) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (303528) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (304528) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (305528) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (306528) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (307528) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (308528) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (309528) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (310528) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (311528) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (312528) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (313528) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (314528) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (315528) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (316528) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (317528) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (318528) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (318528) GAP: --RSSI: -83[0m
+[0;32mI (318528) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (318529) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (318542) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (318549) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (319557) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (319557) GAP: --RSSI: -78[0m
+[0;32mI (319557) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (319558) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (319571) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (319577) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (320585) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (320585) GAP: --RSSI: -81[0m
+[0;32mI (320585) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (320586) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (320599) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (320606) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (321614) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (322614) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (323614) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (324614) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (325614) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (326614) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (326614) GAP: --RSSI: -80[0m
+[0;32mI (326614) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (326615) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (326628) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (326635) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (327643) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (327643) GAP: --RSSI: -77[0m
+[0;32mI (327643) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (327644) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (327658) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (327664) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (328672) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (328672) GAP: --RSSI: -78[0m
+[0;32mI (328672) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (328673) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (328686) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (328692) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (329700) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (330700) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (331700) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (332700) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (333700) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (334700) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (334700) GAP: --RSSI: -77[0m
+[0;32mI (334700) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (334701) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (334714) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (334721) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (335729) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (336729) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (337729) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (338729) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (339729) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (340729) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (341729) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (342729) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (343729) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (344729) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (345729) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (346729) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (347729) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (348729) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (349729) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (350729) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (351729) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (352729) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (353729) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (354729) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (355729) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (356729) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (357729) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (358729) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (359729) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (360729) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (361729) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (361729) GAP: --RSSI: -76[0m
+[0;32mI (361729) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (361730) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (361743) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (361750) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (362758) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (362758) GAP: --RSSI: -74[0m
+[0;32mI (362758) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (362759) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (362773) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (362779) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (363787) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (363787) GAP: --RSSI: -76[0m
+[0;32mI (363787) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (363788) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (363801) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (363808) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (364816) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (365816) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (366816) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (367816) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (368816) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (369816) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (369816) GAP: --RSSI: -75[0m
+[0;32mI (369816) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (369817) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (369830) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (369837) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (370845) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (371845) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (372845) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (373845) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (374845) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (375845) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (375845) GAP: --RSSI: -73[0m
+[0;32mI (375845) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (375846) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (375859) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (375866) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (376874) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (377874) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (378874) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (379874) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (380874) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (381874) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (381875) GAP: --RSSI: -76[0m
+[0;32mI (381875) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (381876) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (381889) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (381895) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (382903) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (382903) GAP: --RSSI: -76[0m
+[0;32mI (382903) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (382904) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (382918) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (382924) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (383932) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (383932) GAP: --RSSI: -77[0m
+[0;32mI (383932) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (383933) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (383946) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (383953) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (384961) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (385961) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (386961) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (387961) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (388961) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (389961) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (389961) GAP: --RSSI: -73[0m
+[0;32mI (389961) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (389962) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (389975) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (389982) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (390990) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (391990) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (392990) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (393990) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (394990) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (395990) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (395990) GAP: --RSSI: -76[0m
+[0;32mI (395990) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (395991) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (396004) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (396011) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (397019) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (398019) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (399019) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (400019) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (401019) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (402019) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (402019) GAP: --RSSI: -76[0m
+[0;32mI (402019) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (402020) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (402033) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (402040) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (403048) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (403048) GAP: --RSSI: -76[0m
+[0;32mI (403048) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (403049) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (403063) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (403069) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (404077) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (404077) GAP: --RSSI: -75[0m
+[0;32mI (404077) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (404078) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (404091) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (404098) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (405106) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (406106) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (407106) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (408106) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (409106) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (410106) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (410106) GAP: --RSSI: -74[0m
+[0;32mI (410106) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (410107) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (410120) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (410127) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (411135) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (412135) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (413135) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (414135) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (415135) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (416135) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (416135) GAP: --RSSI: -72[0m
+[0;32mI (416135) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (416136) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (416149) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (416156) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (417164) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (418164) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (419164) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (420164) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (421164) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (421164) GAP: --RSSI: -75[0m
+[0;32mI (421164) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (421165) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (421178) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (421185) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (422193) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (422193) GAP: --RSSI: -72[0m
+[0;32mI (422193) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (422194) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (422208) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (422214) GAP: --------------da nhan duoc phan hoi----------------------------[0m

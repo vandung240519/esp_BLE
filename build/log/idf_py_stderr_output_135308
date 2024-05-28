@@ -1,0 +1,83 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM9 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM9 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400fd49b: task_wdt_timeout_handling at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/task_wdt/task_wdt.c:441
+0x400fd8b8: task_wdt_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/task_wdt/task_wdt.c:515
+0x40083af1: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x40090089: btdm_bb_isr at intc.c:?
+0x400d727b: uart_write at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/vfs/vfs_uart.c:218
+0x400d60ef: console_write at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d5c7a: esp_vfs_write at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40120de9: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x4012c78b: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x4012c14e: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x4012128d: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x40136e05: esp_log_writev at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/log/log.c:215
+0x40097e25: esp_log_write at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/log/log.c:225
+0x400d76d9: update_device_info at C:/esp/bt_discovery/main/main.c:171 (discriminator 1)
+0x400d78d8: bt_app_gap_cb at C:/esp/bt_discovery/main/main.c:271
+0x400d9ae1: btc_gap_bt_cb_to_app at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/bt/host/bluedroid/btc/profile/std/gap/btc_gap_bt.c:39
+0x400d9c19: btc_gap_bt_search_devices_evt at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/bt/host/bluedroid/btc/profile/std/gap/btc_gap_bt.c:356
+0x400d9ff2: btc_gap_bt_cb_handler at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/bt/host/bluedroid/btc/profile/std/gap/btc_gap_bt.c:1115
+0x400ebbb3: btc_thread_handler at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/bt/common/btc/core/btc_task.c:277
+0x400edf07: osi_thread_run at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/bt/common/osi/thread.c:165
+0x40092e89: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400fd49b: task_wdt_timeout_handling at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/task_wdt/task_wdt.c:441
+0x400fd8b8: task_wdt_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/task_wdt/task_wdt.c:515
+0x40083af1: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x40090089: btdm_bb_isr at intc.c:?
+0x400d727b: uart_write at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/vfs/vfs_uart.c:218
+0x400d60ef: console_write at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d5c7a: esp_vfs_write at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40120de9: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x4012c78b: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x4012c14e: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x4012128d: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x40136e05: esp_log_writev at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/log/log.c:215
+0x40097e25: esp_log_write at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/log/log.c:225
+0x400d76d9: update_device_info at C:/esp/bt_discovery/main/main.c:171 (discriminator 1)
+0x400d78d8: bt_app_gap_cb at C:/esp/bt_discovery/main/main.c:271
+0x400d9ae1: btc_gap_bt_cb_to_app at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/bt/host/bluedroid/btc/profile/std/gap/btc_gap_bt.c:39
+0x400d9c19: btc_gap_bt_search_devices_evt at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/bt/host/bluedroid/btc/profile/std/gap/btc_gap_bt.c:356
+0x400d9ff2: btc_gap_bt_cb_handler at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/bt/host/bluedroid/btc/profile/std/gap/btc_gap_bt.c:1115
+0x400ebbb3: btc_thread_handler at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/bt/common/btc/core/btc_task.c:277
+0x400edf07: osi_thread_run at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/bt/common/osi/thread.c:165
+0x40092e89: vPortTaskWrapper at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400fd49b: task_wdt_timeout_handling at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/task_wdt/task_wdt.c:441
+0x400fd8b8: task_wdt_isr at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/task_wdt/task_wdt.c:515
+0x40083af1: _xt_lowint1 at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x40090089: btdm_bb_isr at intc.c:?
+0x400d727b: uart_write at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/vfs/vfs_uart.c:218
+0x400d60ef: console_write at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/vfs/vfs_console.c:73 (discriminator 1)
+0x400d5c7a: esp_vfs_write at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/vfs/vfs.c:482 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x40120de9: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x4012c78b: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x4012c14e: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x4012128d: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x40136e05: esp_log_writev at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/log/log.c:215
+0x40097e25: esp_log_write at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/log/log.c:225
+0x400d76d9: update_device_info at C:/esp/bt_discovery/main/main.c:171 (discriminator 1)
+0x400d78d8: bt_app_gap_cb at C:/esp/bt_discovery/main/main.c:271
+0x400d9ae1: btc_gap_bt_cb_to_app at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/bt/host/bluedroid/btc/profile/std/gap/btc_gap_bt.c:39
+0x400d9c19: btc_gap_bt_search_devices_evt at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/bt/host/bluedroid/btc/profile/std/gap/btc_gap_bt.c:356
+0x400d9ff2: btc_gap_bt_cb_handler at C:/esp/Espressif/frameworks/esp-idf-v5.2.1/components/bt/host/bluedroid/btc/pr

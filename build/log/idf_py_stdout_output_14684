@@ -1,0 +1,490 @@
+H�당esp32: SPI Speed      : 40M�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 27 2024 22:25:31[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1c56ch (116076) map[0m
+[0;32mI (145) esp_image: segment 1: paddr=0002c594 vaddr=3ffbdb60 size=03a84h ( 14980) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=68460h (427104) map[0m
+[0;32mI (297) esp_image: segment 3: paddr=00098488 vaddr=3ffc15e4 size=00f10h (  3856) load[0m
+[0;32mI (299) esp_image: segment 4: paddr=000993a0 vaddr=40080000 size=19ecch (106188) load[0m
+[0;32mI (357) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (357) boot: Disabling RNG early entropy source...[0m
+[0;32mI (369) cpu_start: Multicore app[0m
+[0;32mI (378) cpu_start: Pro cpu start user code[0m
+[0;32mI (378) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (378) cpu_start: Application information:[0m
+[0;32mI (381) cpu_start: Project name:     bt_discovery[0m
+[0;32mI (386) cpu_start: App version:      1[0m
+[0;32mI (391) cpu_start: Compile time:     May 27 2024 22:25:17[0m
+[0;32mI (397) cpu_start: ELF file SHA256:  6345a8297...[0m
+[0;32mI (402) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (407) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (412) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (417) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (422) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (429) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (435) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (441) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (447) heap_init: At 3FFC6408 len 00019BF8 (102 KiB): DRAM[0m
+[0;32mI (453) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (460) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (466) heap_init: At 40099ECC len 00006134 (24 KiB): IRAM[0m
+[0;32mI (474) spi_flash: detected chip: generic[0m
+[0;32mI (477) spi_flash: flash io: dio[0m
+[0;33mW (481) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (495) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (500) main_task: Started on CPU0[0m
+[0;32mI (503) main_task: Calling app_main()[0m
+------------bbbbbbbbbbbbbbbbbbbb---------------[0;32mI (548) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (550) BTDM_INIT: Bluetooth MAC: 44:17:93:7c:43:b2[0m
+[0;32mI (556) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1197) uart: queue free spaces: 10[0m
+------------999999999999999999999----------------[0;32mI (1199) GAP: event: 10[0m
+------------aaaaaaaaaaaaaaaaaa----------------------------888888888888888888----------------[0;32mI (1208) main_task: Returned from app_main()[0m
+------------999999999999999999999----------------[0;32mI (1216) GAP: Discovery started.[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (1408) GAP: Device found: 54:0e:58:80:1f:ce[0m
+[0;32mI (1411) GAP: Data sent successfully: '54:0e:58:80:1f:ce'[0m
+[0;31mE (1417) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (6425) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (11425) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (16425) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 27 2024 22:25:31[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1c56ch (116076) map[0m
+[0;32mI (145) esp_image: segment 1: paddr=0002c594 vaddr=3ffbdb60 size=03a84h ( 14980) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=68460h (427104) map[0m
+[0;32mI (297) esp_image: segment 3: paddr=00098488 vaddr=3ffc15e4 size=00f10h (  3856) load[0m
+[0;32mI (299) esp_image: segment 4: paddr=000993a0 vaddr=40080000 size=19ecch (106188) load[0m
+[0;32mI (357) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (357) boot: Disabling RNG early entropy source...[0m
+[0;32mI (369) cpu_start: Multicore app[0m
+[0;32mI (378) cpu_start: Pro cpu start user code[0m
+[0;32mI (378) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (378) cpu_start: Application information:[0m
+[0;32mI (381) cpu_start: Project name:     bt_discovery[0m
+[0;32mI (386) cpu_start: App version:      1[0m
+[0;32mI (391) cpu_start: Compile time:     May 27 2024 22:25:17[0m
+[0;32mI (397) cpu_start: ELF file SHA256:  6345a8297...[0m
+[0;32mI (402) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (407) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (412) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (417) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (422) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (429) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (435) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (441) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (447) heap_init: At 3FFC6408 len 00019BF8 (102 KiB): DRAM[0m
+[0;32mI (453) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (460) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (466) heap_init: At 40099ECC len 00006134 (24 KiB): IRAM[0m
+[0;32mI (474) spi_flash: detected chip: generic[0m
+[0;32mI (477) spi_flash: flash io: dio[0m
+[0;33mW (481) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (495) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (500) main_task: Started on CPU0[0m
+[0;32mI (503) main_task: Calling app_main()[0m
+------------bbbbbbbbbbbbbbbbbbbb---------------[0;32mI (548) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (550) BTDM_INIT: Bluetooth MAC: 44:17:93:7c:43:b2[0m
+[0;32mI (556) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1190) uart: queue free spaces: 10[0m
+------------999999999999999999999----------------[0;32mI (1193) GAP: event: 10[0m
+------------aaaaaaaaaaaaaaaaaa----------------------------888888888888888888----------------[0;32mI (1202) main_task: Returned from app_main()[0m
+------------999999999999999999999----------------[0;32mI (1210) GAP: Discovery started.[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (6028) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (6031) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (6037) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (11044) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 27 2024 22:25:31[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1c56ch (116076) map[0m
+[0;32mI (145) esp_image: segment 1: paddr=0002c594 vaddr=3ffbdb60 size=03a84h ( 14980) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=68460h (427104) map[0m
+[0;32mI (297) esp_image: segment 3: paddr=00098488 vaddr=3ffc15e4 size=00f10h (  3856) load[0m
+[0;32mI (299) esp_image: segment 4: paddr=000993a0 vaddr=40080000 size=19ecch (106188) load[0m
+[0;32mI (357) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (357) boot: Disabling RNG early entropy source...[0m
+[0;32mI (369) cpu_start: Multicore app[0m
+[0;32mI (378) cpu_start: Pro cpu start user code[0m
+[0;32mI (378) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (378) cpu_start: Application information:[0m
+[0;32mI (381) cpu_start: Project name:     bt_discovery[0m
+[0;32mI (386) cpu_start: App version:      1[0m
+[0;32mI (391) cpu_start: Compile time:     May 27 2024 22:25:17[0m
+[0;32mI (397) cpu_start: ELF file SHA256:  6345a8297...[0m
+[0;32mI (402) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (407) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (412) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (417) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (422) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (429) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (435) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (441) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (447) heap_init: At 3FFC6408 len 00019BF8 (102 KiB): DRAM[0m
+[0;32mI (453) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (460) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (466) heap_init: At 40099ECC len 00006134 (24 KiB): IRAM[0m
+[0;32mI (474) spi_flash: detected chip: generic[0m
+[0;32mI (477) spi_flash: flash io: dio[0m
+[0;33mW (481) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (495) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (500) main_task: Started on CPU0[0m
+[0;32mI (503) main_task: Calling app_main()[0m
+------------bbbbbbbbbbbbbbbbbbbb---------------[0;32mI (548) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (550) BTDM_INIT: Bluetooth MAC: 44:17:93:7c:43:b2[0m
+[0;32mI (556) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1184) uart: queue free spaces: 10[0m
+------------999999999999999999999----------------[0;32mI (1186) GAP: event: 10[0m
+------------aaaaaaaaaaaaaaaaaa----------------------------888888888888888888----------------[0;32mI (1195) main_task: Returned from app_main()[0m
+------------999999999999999999999----------------[0;32mI (1203) GAP: Discovery started.[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (1586) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (1589) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (1595) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (6603) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (11603) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (11603) GAP: --RSSI: -81[0m
+------------666666666666666666666----------------------------33333333333333333333333----------------------------444444444444444444444444----------------------------777777777777777777777777----------------[0;32mI (11611) GAP: Found a target device, address ec:30:b3:7f:d6:1e, name 20210234[0m
+[0;32mI (11625) GAP: ----------------------------------------------------------------ec:30:b3:7f:d6:1e[0m
+[0;32mI (16635) GAP: Cancel device discovery ...[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (16635) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (16642) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (16648) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (21656) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (26656) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (31656) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (36656) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 27 2024 22:25:31[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1c56ch (116076) map[0m
+[0;32mI (145) esp_image: segment 1: paddr=0002c594 vaddr=3ffbdb60 size=03a84h ( 14980) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=68460h (427104) map[0m
+[0;32mI (297) esp_image: segment 3: paddr=00098488 vaddr=3ffc15e4 size=00f10h (  3856) load[0m
+[0;32mI (299) esp_image: segment 4: paddr=000993a0 vaddr=40080000 size=19ecch (106188) load[0m
+[0;32mI (357) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (357) boot: Disabling RNG early entropy source...[0m
+[0;32mI (369) cpu_start: Multicore app[0m
+[0;32mI (378) cpu_start: Pro cpu start user code[0m
+[0;32mI (378) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (378) cpu_start: Application information:[0m
+[0;32mI (381) cpu_start: Project name:     bt_discovery[0m
+[0;32mI (386) cpu_start: App version:      1[0m
+[0;32mI (391) cpu_start: Compile time:     May 27 2024 22:25:17[0m
+[0;32mI (397) cpu_start: ELF file SHA256:  6345a8297...[0m
+[0;32mI (402) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (407) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (412) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (417) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (422) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (429) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (435) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (441) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (447) heap_init: At 3FFC6408 len 00019BF8 (102 KiB): DRAM[0m
+[0;32mI (453) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (460) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (466) heap_init: At 40099ECC len 00006134 (24 KiB): IRAM[0m
+[0;32mI (474) spi_flash: detected chip: generic[0m
+[0;32mI (477) spi_flash: flash io: dio[0m
+[0;33mW (481) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (495) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (500) main_task: Started on CPU0[0m
+[0;32mI (503) main_task: Calling app_main()[0m
+------------bbbbbbbbbbbbbbbbbbbb---------------[0;32mI (548) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (550) BTDM_INIT: Bluetooth MAC: 44:17:93:7c:43:b2[0m
+[0;32mI (556) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1192) uart: queue free spaces: 10[0m
+------------999999999999999999999----------------[0;32mI (1195) GAP: event: 10[0m
+------------aaaaaaaaaaaaaaaaaa----------------------------888888888888888888----------------[0;32mI (1203) main_task: Returned from app_main()[0m
+------------999999999999999999999----------------[0;32mI (1211) GAP: Discovery started.[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (2234) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (2237) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (2243) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (7251) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (12251) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (17251) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (17251) GAP: --RSSI: -60[0m
+------------666666666666666666666----------------------------33333333333333333333333----------------------------444444444444444444444444----------------------------777777777777777777777777----------------[0;32mI (17259) GAP: Found a target device, address ec:30:b3:7f:d6:1e, name 20210234[0m
+[0;32mI (17273) GAP: ----------------------------------------------------------------ec:30:b3:7f:d6:1e[0m
+[0;32mI (22283) GAP: Cancel device discovery ...[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (22283) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (22290) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (22296) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (27304) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (32304) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (32304) GAP: --RSSI: -62[0m
+[0;32mI (32304) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (32305) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (32318) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (32324) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (37332) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (42332) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (42332) GAP: --RSSI: -63[0m
+[0;32mI (42332) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (42333) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (42346) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (42352) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (47360) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (47360) GAP: --RSSI: -59[0m
+[0;32mI (47360) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (47361) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (47374) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (47380) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (52388) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (57388) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (57388) GAP: --RSSI: -60[0m
+[0;32mI (57388) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (57389) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (57402) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (57408) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (62416) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (67416) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (67416) GAP: --RSSI: -62[0m
+[0;32mI (67416) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (67417) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (67430) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (67436) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (72444) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (77444) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (77444) GAP: --RSSI: -60[0m
+[0;32mI (77444) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (77445) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (77458) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (77464) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (82472) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (87472) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (87472) GAP: --RSSI: -61[0m
+[0;32mI (87472) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (87473) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (87486) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (87492) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (92500) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (97500) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (97500) GAP: --RSSI: -61[0m
+[0;32mI (97500) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (97501) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (97514) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (97520) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (102528) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (107528) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (107528) GAP: --RSSI: -61[0m
+[0;32mI (107528) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (107529) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (107542) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (107549) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (112557) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (117557) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (117557) GAP: --RSSI: -62[0m
+[0;32mI (117557) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (117558) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (117571) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (117578) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (122586) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (127586) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (127586) GAP: --RSSI: -63[0m
+[0;32mI (127586) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (127587) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (127600) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (127607) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (132615) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (137615) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (137615) GAP: --RSSI: -62[0m
+[0;32mI (137615) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (137616) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (137629) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (137636) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (142644) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (147644) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (147644) GAP: --RSSI: -60[0m
+[0;32mI (147644) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (147645) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (147658) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (147665) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (152673) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (157673) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (157673) GAP: --RSSI: -61[0m
+[0;32mI (157673) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (157674) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (157687) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (157694) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (162702) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (167702) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (167702) GAP: --RSSI: -61[0m
+[0;32mI (167702) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (167703) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (167716) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (167723) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (172731) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (177731) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (177731) GAP: --RSSI: -60[0m
+[0;32mI (177731) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (177732) GAP: Device found: c0:e4:34:e0:95:08[0m
+[0;32mI (177745) GAP: Data sent successfully: 'c0:e4:34:e0:95:08'[0m
+[0;31mE (177752) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (182760) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (187760) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (187760) GAP: --RSSI: -93[0m
+[0;32mI (187760) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (187761) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (187774) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (187781) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (192789) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (197789) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (197789) GAP: --RSSI: -59[0m
+[0;32mI (197789) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (197790) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (197803) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (197810) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (202818) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (207818) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (207818) GAP: --RSSI: -61[0m
+[0;32mI (207818) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (207819) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (207832) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (207839) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (212847) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (217847) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (217847) GAP: --RSSI: -64[0m
+[0;32mI (217847) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (217848) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (217861) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (217868) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (222876) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (227876) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (232876) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (232876) GAP: --RSSI: -61[0m
+[0;32mI (232876) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (232877) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (232890) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (232897) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (237905) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (242905) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (247905) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (247905) GAP: --RSSI: -62[0m
+[0;32mI (247905) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (247906) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (247919) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (247926) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (252934) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (257934) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (262934) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (262934) GAP: --RSSI: -62[0m
+[0;32mI (262934) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (262935) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (262948) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (262955) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (267963) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (272963) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (277963) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (277963) GAP: --RSSI: -61[0m
+[0;32mI (277963) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (277964) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (277977) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (277984) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (282992) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (287992) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (292992) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (292992) GAP: --RSSI: -62[0m
+[0;32mI (292992) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (292993) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (293006) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (293013) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (298021) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (303021) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (308021) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (308021) GAP: --RSSI: -62[0m
+[0;32mI (308021) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (308022) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (308035) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (308042) GAP: --------------chua nhan dc phan hoi----------------------------[0m

@@ -1,0 +1,1098 @@
+e�&�+
+B��J��ѹesp3�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 27 2024 22:25:31[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1c56ch (116076) map[0m
+[0;32mI (145) esp_image: segment 1: paddr=0002c594 vaddr=3ffbdb60 size=03a84h ( 14980) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=68460h (427104) map[0m
+[0;32mI (297) esp_image: segment 3: paddr=00098488 vaddr=3ffc15e4 size=00f10h (  3856) load[0m
+[0;32mI (299) esp_image: segment 4: paddr=000993a0 vaddr=40080000 size=19ecch (106188) load[0m
+[0;32mI (357) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (357) boot: Disabling RNG early entropy source...[0m
+[0;32mI (369) cpu_start: Multicore app[0m
+[0;32mI (378) cpu_start: Pro cpu start user code[0m
+[0;32mI (378) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (378) cpu_start: Application information:[0m
+[0;32mI (381) cpu_start: Project name:     bt_discovery[0m
+[0;32mI (386) cpu_start: App version:      1[0m
+[0;32mI (391) cpu_start: Compile time:     May 27 2024 22:25:17[0m
+[0;32mI (397) cpu_start: ELF file SHA256:  f91df0db6...[0m
+[0;32mI (402) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (407) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (412) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (417) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (422) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (429) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (435) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (441) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (447) heap_init: At 3FFC6408 len 00019BF8 (102 KiB): DRAM[0m
+[0;32mI (453) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (460) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (466) heap_init: At 40099ECC len 00006134 (24 KiB): IRAM[0m
+[0;32mI (474) spi_flash: detected chip: generic[0m
+[0;32mI (477) spi_flash: flash io: dio[0m
+[0;33mW (481) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (495) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (500) main_task: Started on CPU0[0m
+[0;32mI (503) main_task: Calling app_main()[0m
+------------bbbbbbbbbbbbbbbbbbbb---------------[0;32mI (548) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (550) BTDM_INIT: Bluetooth MAC: 44:17:93:7c:43:b2[0m
+[0;32mI (556) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1197) uart: queue free spaces: 10[0m
+------------999999999999999999999----------------[0;32mI (1200) GAP: event: 10[0m
+------------aaaaaaaaaaaaaaaaaa----------------------------888888888888888888----------------[0;32mI (1208) main_task: Returned from app_main()[0m
+------------999999999999999999999----------------[0;32mI (1217) GAP: Discovery started.[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (1304) GAP: Device found: cc:47:40:01:35:46[0m
+[0;32mI (1307) GAP: Data sent successfully: 'cc:47:40:01:35:46'[0m
+[0;31mE (1313) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (2320) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (2320) GAP: --RSSI: -82[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (2320) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (2330) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (2336) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (3344) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (3344) GAP: --RSSI: -66[0m
+------------666666666666666666666----------------------------33333333333333333333333----------------------------444444444444444444444444----------------------------777777777777777777777777----------------[0;32mI (3352) GAP: Found a target device, address ec:30:b3:7f:d6:1e, name 20210234[0m
+[0;32mI (3366) GAP: ----------------------------------------------------------------ec:30:b3:7f:d6:1e[0m
+[0;32mI (8376) GAP: Cancel device discovery ...[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (8376) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (8383) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (8389) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (9396) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (9396) GAP: --RSSI: -69[0m
+[0;32mI (9396) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (9397) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (9410) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (9416) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (10424) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (11424) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (12424) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (13424) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (14424) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (15424) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (16424) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (17424) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (18424) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (19424) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (20424) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (21424) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (22424) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (23424) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (24424) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (25424) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (26424) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (27424) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (28424) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (29424) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (29424) GAP: --RSSI: -66[0m
+[0;32mI (29424) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (29425) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (29438) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (29444) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (30452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (31452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (32452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (33452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (34452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (35452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (36452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (37452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (38452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (39452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (40452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (41452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (42452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (43452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (44452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (45452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (46452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (47452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (48452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (49452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (50452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (51452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (52452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (53452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (54452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (55452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (56452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (57452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (58452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (59452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (60452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (61452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (62452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (63452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (64452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (65452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (66452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (67452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (68452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (69452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (70452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (71452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (72452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (73452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (74452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (75452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (76452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (77452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (78452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (79452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (80452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (81452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (82452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (83452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (84452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (85452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (86452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (87452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (88452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (89452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (90452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (91452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (92452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (93452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (94452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (95452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (96452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (97452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (98452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (99452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (100452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (101452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (102452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (103452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (104452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (105452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (106452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (107452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (108452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (109452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (110452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (111452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (112452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (113452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (114452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (115452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (116452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (117452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (118452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (119452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (120452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (121452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (122452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (123452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (124452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (125452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (126452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (127452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (128452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (129452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (130452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (131452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (132452) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (133452) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (134452) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (134452) GAP: --RSSI: -68[0m
+[0;32mI (134452) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (134453) GAP: Device found: ec:30:b3:7f:d6:1e[0m
+[0;32mI (134466) GAP: Data sent successfully: 'ec:30:b3:7f:d6:1e'[0m
+[0;31mE (134473) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (135481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (136481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (137481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (138481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (139481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (140481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (141481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (142481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (143481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (144481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (145481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (146481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (147481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (148481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (149481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (150481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (151481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (152481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (153481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (154481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (155481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (156481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (157481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (158481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (159481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (160481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (161481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (162481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (163481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (164481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (165481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (166481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (167481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (168481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (169481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (170481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (171481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (172481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (173481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (174481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (175481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (176481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (177481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (178481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (179481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (180481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (181481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (182481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (183481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (184481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (185481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (186481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (187481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (188481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (189481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (190481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (191481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (192481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (193481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (194481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (195481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (196481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (197481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (198481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (199481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (200481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (201481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (202481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (203481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (204481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (205481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (206481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (207481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (208481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (209481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (210481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (211481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (212481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (213481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (214481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (215481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (216481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (217481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (218481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (219481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (220481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (221481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (222481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (223481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (224481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (225481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (226481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (227481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (228481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (229481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (230481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (231481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (232481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (233481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (234481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (235481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (236481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (237481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (238481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (239481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (240481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (241481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (242481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (243481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (244481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (245481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (246481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (247481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (248481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (249481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (250481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (251481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (252481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (253481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (254481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (255481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (256481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (257481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (258481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (259481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (260481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (261481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (262481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (263481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (264481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (265481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (266481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (267481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (268481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (269481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (270481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (271481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (272481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (273481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (274481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (275481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (276481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (277481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (278481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (279481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (280481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (281481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (282481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (283481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (284481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (285481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (286481) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 27 2024 22:25:31[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1c56ch (116076) map[0m
+[0;32mI (145) esp_image: segment 1: paddr=0002c594 vaddr=3ffbdb60 size=03a84h ( 14980) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=68460h (427104) map[0m
+[0;32mI (297) esp_image: segment 3: paddr=00098488 vaddr=3ffc15e4 size=00f10h (  3856) load[0m
+[0;32mI (299) esp_image: segment 4: paddr=000993a0 vaddr=40080000 size=19ecch (106188) load[0m
+[0;32mI (357) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (357) boot: Disabling RNG early entropy source...[0m
+[0;32mI (369) cpu_start: Multicore app[0m
+[0;32mI (378) cpu_start: Pro cpu start user code[0m
+[0;32mI (378) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (378) cpu_start: Application information:[0m
+[0;32mI (381) cpu_start: Project name:     bt_discovery[0m
+[0;32mI (386) cpu_start: App version:      1[0m
+[0;32mI (391) cpu_start: Compile time:     May 27 2024 22:25:17[0m
+[0;32mI (397) cpu_start: ELF file SHA256:  f91df0db6...[0m
+[0;32mI (402) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (407) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (412) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (417) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (422) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (429) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (435) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (441) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (447) heap_init: At 3FFC6408 len 00019BF8 (102 KiB): DRAM[0m
+[0;32mI (453) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (460) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (466) heap_init: At 40099ECC len 00006134 (24 KiB): IRAM[0m
+[0;32mI (474) spi_flash: detected chip: generic[0m
+[0;32mI (477) spi_flash: flash io: dio[0m
+[0;33mW (481) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (495) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (500) main_task: Started on CPU0[0m
+[0;32mI (503) main_task: Calling app_main()[0m
+------------bbbbbbbbbbbbbbbbbbbb---------------[0;32mI (548) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (550) BTDM_INIT: Bluetooth MAC: 44:17:93:7c:43:b2[0m
+[0;32mI (556) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1198) uart: queue free spaces: 10[0m
+------------999999999999999999999----------------[0;32mI (1200) GAP: event: 10[0m
+------------aaaaaaaaaaaaaaaaaa----------------------------888888888888888888----------------[0;32mI (1209) main_task: Returned from app_main()[0m
+------------999999999999999999999----------------[0;32mI (1217) GAP: Discovery started.[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (4664) GAP: Device found: cc:47:40:01:35:46[0m
+[0;32mI (4667) GAP: Data sent successfully: 'cc:47:40:01:35:46'[0m
+[0;31mE (4673) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (5680) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (6680) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (7680) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (8680) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (9680) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (10680) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (11680) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (11680) GAP: --RSSI: -86[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (20012) GAP: Device found: cc:47:40:01:35:46[0m
+[0;32mI (20014) GAP: Data sent successfully: 'cc:47:40:01:35:46'[0m
+[0;31mE (20021) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (21028) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (22028) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (23028) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (24028) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (25028) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (26028) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (27028) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (28028) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (29028) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (30028) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (31028) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (32028) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (33028) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (34028) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (35028) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (36028) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (37028) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (38028) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (39028) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (40028) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (41028) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (42028) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (43028) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (44028) GAP: --------------da nhan duoc phan hoi----------------------------[0m
+[0;32mI (45028) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (45028) GAP: --RSSI: -87[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (45028) GAP: Device found: cc:47:40:01:35:46[0m
+[0;32mI (45038) GAP: Data sent successfully: 'cc:47:40:01:35:46'[0m
+[0;31mE (45044) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (46052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (47052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (48052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (49052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (50052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (51052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (52052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (53052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (54052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (55052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (56052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (57052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (58052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (59052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (60052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (61052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (62052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (63052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (64052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (65052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (66052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (67052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (68052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (69052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (70052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (71052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (72052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (73052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (74052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (75052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (76052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (77052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (78052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (79052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (80052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (81052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (82052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (83052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (84052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (85052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (86052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (87052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (88052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (89052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (90052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (91052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (92052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (93052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (94052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (95052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (96052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (97052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (98052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (99052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (100052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (101052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (102052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (103052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (104052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (105052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (106052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (107052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (108052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (109052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (110052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (111052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (112052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (113052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (114052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (115052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (116052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (117052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (118052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (119052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (120052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (121052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (122052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (123052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (124052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (125052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (126052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (127052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (128052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (129052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (130052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (131052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (132052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (133052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (134052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (135052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (136052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (137052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (138052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (139052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (140052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (141052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (142052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (143052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (144052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (145052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (146052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (147052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (148052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (149052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (150052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (151052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (152052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (153052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (154052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (155052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (156052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (157052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (158052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (159052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (160052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (161052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (162052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (163052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (164052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (165052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (166052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (167052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (168052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (169052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (170052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (171052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (172052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (173052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (174052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (175052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (176052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (177052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (178052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (179052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (180052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (181052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (182052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (183052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (184052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (185052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (186052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (187052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (188052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (189052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (190052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (191052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (192052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (193052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (194052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (195052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (196052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (197052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (198052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (199052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (200052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (201052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (202052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (203052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (204052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (205052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (206052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (207052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (208052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (209052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (210052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (211052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (212052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (213052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (214052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (215052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (216052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (217052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (218052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (219052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (220052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (221052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (222052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (223052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (224052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (225052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (226052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (227052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (228052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (229052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (230052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (231052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (232052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (233052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (234052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (235052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (236052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (237052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (238052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (239052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (240052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (241052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (242052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (243052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (244052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (245052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (246052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (247052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (248052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (249052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (250052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (251052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (252052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (253052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (254052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (255052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (256052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (257052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (258052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (259052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (260052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (261052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (262052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (263052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (264052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (265052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (266052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (267052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (268052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (269052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (270052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (271052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (272052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (273052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (274052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (275052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (276052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (277052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (278052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (279052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (280052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (281052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (282052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (283052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (284052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (285052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (286052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (287052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (288052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (289052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (290052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (291052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (292052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (293052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (294052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (295052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (296052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (297052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (298052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (299052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (300052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (301052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (302052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (303052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (304052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (305052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (306052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (307052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (308052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (309052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (310052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (311052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (312052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (313052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (314052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (315052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (316052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (317052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (318052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (319052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (320052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (321052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (322052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (323052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (324052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (325052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (326052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (327052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (328052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (329052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (330052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (331052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (332052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (333052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (334052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (335052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (336052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (337052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (338052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (339052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (340052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (341052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (342052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (343052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (344052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (345052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (346052) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 27 2024 22:25:31[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1c56ch (116076) map[0m
+[0;32mI (145) esp_image: segment 1: paddr=0002c594 vaddr=3ffbdb60 size=03a84h ( 14980) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=68460h (427104) map[0m
+[0;32mI (297) esp_image: segment 3: paddr=00098488 vaddr=3ffc15e4 size=00f10h (  3856) load[0m
+[0;32mI (299) esp_image: segment 4: paddr=000993a0 vaddr=40080000 size=19ecch (106188) load[0m
+[0;32mI (357) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (357) boot: Disabling RNG early entropy source...[0m
+[0;32mI (369) cpu_start: Multicore app[0m
+[0;32mI (378) cpu_start: Pro cpu start user code[0m
+[0;32mI (378) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (378) cpu_start: Application information:[0m
+[0;32mI (381) cpu_start: Project name:     bt_discovery[0m
+[0;32mI (386) cpu_start: App version:      1[0m
+[0;32mI (391) cpu_start: Compile time:     May 27 2024 22:25:17[0m
+[0;32mI (397) cpu_start: ELF file SHA256:  f91df0db6...[0m
+[0;32mI (402) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (407) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (412) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (417) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (422) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (429) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (435) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (441) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (447) heap_init: At 3FFC6408 len 00019BF8 (102 KiB): DRAM[0m
+[0;32mI (453) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (460) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (466) heap_init: At 40099ECC len 00006134 (24 KiB): IRAM[0m
+[0;32mI (474) spi_flash: detected chip: generic[0m
+[0;32mI (477) spi_flash: flash io: dio[0m
+[0;33mW (481) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (495) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (500) main_task: Started on CPU0[0m
+[0;32mI (503) main_task: Calling app_main()[0m
+------------bbbbbbbbbbbbbbbbbbbb---------------[0;32mI (548) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (550) BTDM_INIT: Bluetooth MAC: 44:17:93:7c:43:b2[0m
+[0;32mI (556) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1198) uart: queue free spaces: 10[0m
+------------999999999999999999999----------------[0;32mI (1201) GAP: event: 10[0m
+------------aaaaaaaaaaaaaaaaaa----------------------------888888888888888888----------------[0;32mI (1210) main_task: Returned from app_main()[0m
+------------999999999999999999999----------------[0;32mI (1218) GAP: Discovery started.[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 27 2024 22:25:31[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1c56ch (116076) map[0m
+[0;32mI (145) esp_image: segment 1: paddr=0002c594 vaddr=3ffbdb60 size=03a84h ( 14980) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=68460h (427104) map[0m
+[0;32mI (297) esp_image: segment 3: paddr=00098488 vaddr=3ffc15e4 size=00f10h (  3856) load[0m
+[0;32mI (299) esp_image: segment 4: paddr=000993a0 vaddr=40080000 size=19ecch (106188) load[0m
+[0;32mI (357) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (357) boot: Disabling RNG early entropy source...[0m
+[0;32mI (369) cpu_start: Multicore app[0m
+[0;32mI (378) cpu_start: Pro cpu start user code[0m
+[0;32mI (378) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (378) cpu_start: Application information:[0m
+[0;32mI (381) cpu_start: Project name:     bt_discovery[0m
+[0;32mI (386) cpu_start: App version:      1[0m
+[0;32mI (391) cpu_start: Compile time:     May 27 2024 22:25:17[0m
+[0;32mI (397) cpu_start: ELF file SHA256:  f91df0db6...[0m
+[0;32mI (402) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (407) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (412) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (417) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (422) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (429) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (435) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (441) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (447) heap_init: At 3FFC6408 len 00019BF8 (102 KiB): DRAM[0m
+[0;32mI (453) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (460) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (466) heap_init: At 40099ECC len 00006134 (24 KiB): IRAM[0m
+[0;32mI (474) spi_flash: detected chip: generic[0m
+[0;32mI (477) spi_flash: flash io: dio[0m
+[0;33mW (481) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (495) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (500) main_task: Started on CPU0[0m
+[0;32mI (503) main_task: Calling app_main()[0m
+------------bbbbbbbbbbbbbbbbbbbb---------------[0;32mI (548) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (550) BTDM_INIT: Bluetooth MAC: 44:17:93:7c:43:b2[0m
+[0;32mI (556) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1205) uart: queue free spaces: 10[0m
+------------999999999999999999999----------------[0;32mI (1207) GAP: event: 10[0m
+------------aaaaaaaaaaaaaaaaaa----------------------------888888888888888888----------------[0;32mI (1216) main_task: Returned from app_main()[0m
+------------999999999999999999999----------------[0;32mI (1224) GAP: Discovery started.[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (17060) GAP: Device found: cc:47:40:01:35:46[0m
+[0;32mI (17063) GAP: Data sent successfully: 'cc:47:40:01:35:46'[0m
+[0;31mE (17069) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (18077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (19077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (20077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (21077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (22077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (23077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (24077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (25077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (26077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (27077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (28077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (29077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (30077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (31077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (32077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (33077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (34077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (35077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (36077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (37077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (38077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (39077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (40077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (41077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (42077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (43077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (44077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (45077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (46077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (47077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (48077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (49077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (50077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (51077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (52077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (53077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (54077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (55077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (56077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (57077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (58077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (59077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (60077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (61077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (62077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (63077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (64077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (65077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (66077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (67077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (68077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (69077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (70077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (71077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (72077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (73077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (74077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (75077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (76077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (77077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (78077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (79077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (80077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (81077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (82077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (83077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (84077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (85077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (86077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (87077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (88077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (89077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (90077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (91077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (92077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (93077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (94077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (95077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (96077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (97077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (98077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (99077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (100077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (101077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (102077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (103077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (104077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (105077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (106077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (107077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (108077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (109077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (110077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (111077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (112077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (113077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (114077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (115077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (116077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (117077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (118077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (119077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (120077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (121077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (122077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (123077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (124077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (125077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (126077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (127077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (128077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (129077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (130077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (131077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (132077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (133077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (134077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (135077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (136077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (137077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (138077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (139077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (140077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (141077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (142077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (143077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (144077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (145077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (146077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (147077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (148077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (149077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (150077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (151077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (152077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (153077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (154077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (155077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (156077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (157077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (158077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (159077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (160077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (161077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (162077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (163077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (164077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (165077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (166077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (167077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (168077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (169077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (170077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (171077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (172077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (173077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (174077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (175077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (176077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (177077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (178077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (179077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (180077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (181077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (182077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (183077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (184077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (185077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (186077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (187077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (188077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (189077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (190077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (191077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (192077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (193077) GAP: --------------chua nhan dc phan hoi----------------------------[0m
+[0;31mE (194077) GAP: --------------chua nhan dc phan hoi----------------------------[0m

@@ -1,0 +1,307 @@
+e��j%�(40) boot.espets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 27 2024 22:25:31[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1c2b4h (115380) map[0m
+[0;32mI (144) esp_image: segment 1: paddr=0002c2dc vaddr=3ffbdb60 size=03d3ch ( 15676) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=68184h (426372) map[0m
+[0;32mI (297) esp_image: segment 3: paddr=000981ac vaddr=3ffc189c size=00c58h (  3160) load[0m
+[0;32mI (298) esp_image: segment 4: paddr=00098e0c vaddr=40080000 size=19e64h (106084) load[0m
+[0;32mI (357) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (357) boot: Disabling RNG early entropy source...[0m
+[0;32mI (369) cpu_start: Multicore app[0m
+[0;32mI (377) cpu_start: Pro cpu start user code[0m
+[0;32mI (377) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (378) cpu_start: Application information:[0m
+[0;32mI (381) cpu_start: Project name:     bt_discovery[0m
+[0;32mI (386) cpu_start: App version:      1[0m
+[0;32mI (390) cpu_start: Compile time:     May 27 2024 22:25:17[0m
+[0;32mI (396) cpu_start: ELF file SHA256:  a7af0523a...[0m
+[0;32mI (402) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (407) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (412) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (417) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (422) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (429) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (435) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (441) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (447) heap_init: At 3FFC6408 len 00019BF8 (102 KiB): DRAM[0m
+[0;32mI (453) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (460) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (466) heap_init: At 40099E64 len 0000619C (24 KiB): IRAM[0m
+[0;32mI (474) spi_flash: detected chip: generic[0m
+[0;32mI (477) spi_flash: flash io: dio[0m
+[0;33mW (481) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (495) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (500) main_task: Started on CPU0[0m
+[0;32mI (504) main_task: Calling app_main()[0m
+------------bbbbbbbbbbbbbbbbbbbb---------------[0;32mI (548) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (550) BTDM_INIT: Bluetooth MAC: 44:17:93:7c:43:b2[0m
+[0;32mI (556) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1193) uart: queue free spaces: 10[0m
+------------999999999999999999999----------------[0;32mI (1196) GAP: event: 10[0m
+------------aaaaaaaaaaaaaaaaaa----------------------------888888888888888888----------------[0;32mI (1203) main_task: Returned from app_main()[0m
+------------999999999999999999999----------------[0;32mI (1214) GAP: Discovery started.[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 27 2024 22:25:31[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1c2b4h (115380) map[0m
+[0;32mI (144) esp_image: segment 1: paddr=0002c2dc vaddr=3ffbdb60 size=03d3ch ( 15676) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=68184h (426372) map[0m
+[0;32mI (297) esp_image: segment 3: paddr=000981ac vaddr=3ffc189c size=00c58h (  3160) load[0m
+[0;32mI (298) esp_image: segment 4: paddr=00098e0c vaddr=40080000 size=19e64h (106084) load[0m
+[0;32mI (357) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (357) boot: Disabling RNG early entropy source...[0m
+[0;32mI (369) cpu_start: Multicore app[0m
+[0;32mI (377) cpu_start: Pro cpu start user code[0m
+[0;32mI (377) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (378) cpu_start: Application information:[0m
+[0;32mI (381) cpu_start: Project name:     bt_discovery[0m
+[0;32mI (386) cpu_start: App version:      1[0m
+[0;32mI (390) cpu_start: Compile time:     May 27 2024 22:25:17[0m
+[0;32mI (396) cpu_start: ELF file SHA256:  a7af0523a...[0m
+[0;32mI (402) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (407) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (412) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (417) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (422) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (429) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (435) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (441) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (447) heap_init: At 3FFC6408 len 00019BF8 (102 KiB): DRAM[0m
+[0;32mI (453) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (460) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (466) heap_init: At 40099E64 len 0000619C (24 KiB): IRAM[0m
+[0;32mI (474) spi_flash: detected chip: generic[0m
+[0;32mI (477) spi_flash: flash io: dio[0m
+[0;33mW (481) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (495) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (500) main_task: Started on CPU0[0m
+[0;32mI (504) main_task: Calling app_main()[0m
+------------bbbbbbbbbbbbbbbbbbbb---------------[0;32mI (548) BTDM_INIT: BT controller compile version [0f0c5a2][0m
+[0;32mI (550) BTDM_INIT: Bluetooth MAC: 44:17:93:7c:43:b2[0m
+[0;32mI (556) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1196) uart: queue free spaces: 10[0m
+------------999999999999999999999----------------[0;32mI (1199) GAP: event: 10[0m
+------------aaaaaaaaaaaaaaaaaa----------------------------888888888888888888----------------[0;32mI (1209) main_task: Returned from app_main()[0m
+------------999999999999999999999----------------[0;32mI (1217) GAP: Discovery started.[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (16179) GAP: Device found: 54:0e:58:80:1f:ce[0m
+[0;32mI (16182) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (16186) GAP: --RSSI: -86[0m
+------------666666666666666666666----------------------------33333333333333333333333----------------------------444444444444444444444444----------------------------777777777777777777777777----------------[0;32mI (16201) GAP: Found a target device, address 54:0e:58:80:1f:ce, name OPPO A15s[0m
+[0;32mI (16215) GAP: ----------------------------------------------------------------54:0e:58:80:1f:ce[0m
+[0;32mI (21225) GAP: Cancel device discovery ...[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (21225) GAP: Device found: 54:0e:58:80:1f:ce[0m
+[0;32mI (21232) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (21236) GAP: --RSSI: -89[0m
+[0;32mI (21240) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (21244) GAP: Device found: 70:a8:d3:1f:34:3d[0m
+[0;32mI (21257) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (21262) GAP: --RSSI: -80[0m
+[0;32mI (21265) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (21432) GAP: Device found: 54:0e:58:80:1f:ce[0m
+[0;32mI (21435) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (21439) GAP: --RSSI: -90[0m
+[0;32mI (21443) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (24370) GAP: Device found: 70:a8:d3:1f:34:3d[0m
+[0;32mI (24372) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (24377) GAP: --RSSI: -81[0m
+[0;32mI (24380) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (29513) GAP: Device found: 70:a8:d3:1f:34:3d[0m
+[0;32mI (29515) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (29520) GAP: --RSSI: -78[0m
+[0;32mI (29523) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (32878) GAP: Device found: 54:0e:58:80:1f:ce[0m
+[0;32mI (32881) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (32886) GAP: --RSSI: -86[0m
+[0;32mI (32889) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (35897) GAP: Device found: 70:a8:d3:1f:34:3d[0m
+[0;32mI (35900) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (35905) GAP: --RSSI: -79[0m
+[0;32mI (35908) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (38489) GAP: Device found: 70:a8:d3:1f:34:3d[0m
+[0;32mI (38491) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (38496) GAP: --RSSI: -82[0m
+[0;32mI (38499) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (44175) GAP: Device found: 54:0e:58:80:1f:ce[0m
+[0;32mI (44177) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (44182) GAP: --RSSI: -87[0m
+[0;32mI (44185) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (48715) GAP: Device found: 70:a8:d3:1f:34:3d[0m
+[0;32mI (48718) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (48723) GAP: --RSSI: -77[0m
+[0;32mI (48726) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (49357) GAP: Device found: 54:0e:58:80:1f:ce[0m
+[0;32mI (49360) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (49364) GAP: --RSSI: -84[0m
+[0;32mI (49368) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (51288) GAP: Device found: 70:a8:d3:1f:34:3d[0m
+[0;32mI (51290) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (51295) GAP: --RSSI: -79[0m
+[0;32mI (51298) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (52559) GAP: Device found: 70:a8:d3:1f:34:3d[0m
+[0;32mI (52562) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (52566) GAP: --RSSI: -81[0m
+[0;32mI (52570) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (52574) GAP: Device found: 70:a8:d3:1f:34:3d[0m
+[0;32mI (52587) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (52592) GAP: --RSSI: -82[0m
+[0;32mI (52595) GAP: Device found: ???[0m
+------------999999999999999999999----------------[0;32mI (62668) GAP: Device discovery stopped.[0m
+------------999999999999999999999----------------[0;32mI (62672) GAP: Discovery started.[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (68197) GAP: Device found: 54:0e:58:80:1f:ce[0m
+[0;32mI (68200) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (68204) GAP: --RSSI: -88[0m
+[0;32mI (68208) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (73021) GAP: Device found: 70:a8:d3:1f:34:3d[0m
+[0;32mI (73024) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (73029) GAP: --RSSI: -80[0m
+[0;32mI (73032) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (74312) GAP: Device found: 70:a8:d3:1f:34:3d[0m
+[0;32mI (74315) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (74320) GAP: --RSSI: -83[0m
+[0;32mI (74323) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (74673) GAP: Device found: 70:a8:d3:1f:34:3d[0m
+[0;32mI (74675) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (74680) GAP: --RSSI: -81[0m
+[0;32mI (74683) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (76885) GAP: Device found: 70:a8:d3:1f:34:3d[0m
+[0;32mI (76888) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (76892) GAP: --RSSI: -81[0m
+[0;32mI (76896) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (78146) GAP: Device found: 70:a8:d3:1f:34:3d[0m
+[0;32mI (78149) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (78154) GAP: --RSSI: -83[0m
+[0;32mI (78157) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (78397) GAP: Device found: 70:a8:d3:1f:34:3d[0m
+[0;32mI (78399) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (78404) GAP: --RSSI: -81[0m
+[0;32mI (78407) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (81165) GAP: Device found: 54:0e:58:80:1f:ce[0m
+[0;32mI (81167) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (81172) GAP: --RSSI: -86[0m
+[0;32mI (81175) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (83280) GAP: Device found: 70:a8:d3:1f:34:3d[0m
+[0;32mI (83283) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (83287) GAP: --RSSI: -78[0m
+[0;32mI (83291) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (84937) GAP: Device found: 54:0e:58:80:1f:ce[0m
+[0;32mI (84940) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (84944) GAP: --RSSI: -85[0m
+[0;32mI (84948) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (85842) GAP: Device found: 70:a8:d3:1f:34:3d[0m
+[0;32mI (85844) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (85849) GAP: --RSSI: -77[0m
+[0;32mI (85852) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (86363) GAP: Device found: 70:a8:d3:1f:34:3d[0m
+[0;32mI (86365) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (86370) GAP: --RSSI: -79[0m
+[0;32mI (86374) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (94878) GAP: Device found: 70:a8:d3:1f:34:3d[0m
+[0;32mI (94880) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (94885) GAP: --RSSI: -80[0m
+[0;32mI (94888) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (97350) GAP: Device found: 70:a8:d3:1f:34:3d[0m
+[0;32mI (97353) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (97357) GAP: --RSSI: -80[0m
+[0;32mI (97361) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (99932) GAP: Device found: 70:a8:d3:1f:34:3d[0m
+[0;32mI (99934) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (99939) GAP: --RSSI: -78[0m
+[0;32mI (99942) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (103764) GAP: Device found: 70:a8:d3:1f:34:3d[0m
+[0;32mI (103767) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (103772) GAP: --RSSI: -78[0m
+[0;32mI (103775) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (104187) GAP: Device found: 54:0e:58:80:1f:ce[0m
+[0;32mI (104190) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (104194) GAP: --RSSI: -88[0m
+[0;32mI (104198) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (106296) GAP: Device found: 70:a8:d3:1f:34:3d[0m
+[0;32mI (106298) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (106303) GAP: --RSSI: -80[0m
+[0;32mI (106307) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (110238) GAP: Device found: 70:a8:d3:1f:34:3d[0m
+[0;32mI (110241) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (110246) GAP: --RSSI: -81[0m
+[0;32mI (110249) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (116542) GAP: Device found: 70:a8:d3:1f:34:3d[0m
+[0;32mI (116545) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (116550) GAP: --RSSI: -80[0m
+[0;32mI (116553) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (121655) GAP: Device found: 70:a8:d3:1f:34:3d[0m
+[0;32mI (121658) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (121663) GAP: --RSSI: -79[0m
+[0;32mI (121666) GAP: Device found: ???[0m
+------------999999999999999999999----------------[0;32mI (124132) GAP: Device discovery stopped.[0m
+------------999999999999999999999----------------[0;32mI (124135) GAP: Discovery started.[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (125599) GAP: Device found: 70:a8:d3:1f:34:3d[0m
+[0;32mI (125602) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (125606) GAP: --RSSI: -76[0m
+[0;32mI (125610) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (125719) GAP: Device found: 70:a8:d3:1f:34:3d[0m
+[0;32mI (125722) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (125727) GAP: --RSSI: -81[0m
+[0;32mI (125730) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (125760) GAP: Device found: 70:a8:d3:1f:34:3d[0m
+[0;32mI (125763) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (125768) GAP: --RSSI: -78[0m
+[0;32mI (125771) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (128062) GAP: Device found: 70:a8:d3:1f:34:3d[0m
+[0;32mI (128064) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (128069) GAP: --RSSI: -80[0m
+[0;32mI (128073) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (129931) GAP: Device found: 54:0e:58:80:1f:ce[0m
+[0;32mI (129933) GAP: --Class of Device: 0x5a020c[0m
+[0;32mI (129938) GAP: --RSSI: -88[0m
+[0;32mI (129942) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (131904) GAP: Device found: 70:a8:d3:1f:34:3d[0m
+[0;32mI (131907) GAP: --Class of Device: 0x2a410c[0m
+[0;32mI (131912) GAP: --RSSI: -81[0m
+[0;32mI (131915) GAP: Device found: ???[0m
+------------999999999999999999999----------------------------66666666666666666----------------[0;32mI (135767) GAP: Device found: 70:a8:d3:1f:34:3d[0m
